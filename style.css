@@ -1,0 +1,53 @@
+body{
+    font-family: "Miichroma",sans-serif;
+}
+.wrapper
+{
+    transition: filter .3s;
+}
+.navbar
+{
+    font-family: 'Assistant';
+    transform: all .3s ease;
+}
+.nav_burger
+{
+    transition:all .3s ease;
+}
+.navbar_burger_line
+{
+    transition:all .3s ease;
+}
+.ineed{
+    font-family: "Michroma",sans-serif;
+}
+
+@media screen and (max-width: 1199px) {
+    .navbar_logo_mob
+ {
+        display: block;
+    }
+    .navbar{
+        color: #002d72;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+/* @media screen and (min-width: 1200px) and (max-width: 1599px) {
+    .navbar_logo_desk {
+        display: flex;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        padding-right: 1rem;
+    }
+} */
+@media screen and (min-width: 992px) and (max-width: 1399px) {
+    .navbar_core {
+        gap: 1rem;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1399px) {
+    .navbar_core_ineed {
+        padding-left: unset;
+    }
+}

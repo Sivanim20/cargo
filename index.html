@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title>International Shipping Lines,Container Shipping, Cargo Service | ZIM</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Comfortaa:wght@300..700&family=Michroma&display=swap" rel="stylesheet">
+    </head>
+    <body class="m-0">
+        <div> <!-- main_div -->
+            <div class="m-0"><!--Title-home-->
+                <div><!--navigation-->
+
+                </div>
+                <div class="relative overflow-hidden min-h-screen flex-col flex wrapper"><!--Wrapper-->
+                    <div class="h-[149px] -left-0 top-0 fixed -right-0 z-[4000] "><!--navbarReact-->
+                        <div><!--newui-->
+                            <div class="bg-gradient-to-b from-[#002d72] to-transparent h-[164px]"><!--Navbar_top-->
+                                <div class="navbar flex items-center justify-between h-[90px] text-white flex relative  items-center bg-transparent max-w-[1920px] mr-auto ml-auto pl-[30px] pr-[50px]"><!--navbar-->
+                                    
+                                    <div class="md:hidden flex items-center ">
+                                        <button id="menu-toggle" class="relative w-8 h-8 focus:outline-none">
+                                            <div class="absolute top-1/2 left-1/2 w-6 h-[2px] bg-white transform -translate-x-1/2 -translate-y-2 transition duration-300" id="line1"></div>
+                                            <div class="absolute top-1/2 left-1/2 w-6 h-[2px] bg-white transform -translate-x-1/2 translate-y-0 transition duration-300" id="line2"></div>
+                                            <div class="absolute top-1/2 left-1/2 w-6 h-[2px] bg-white transform -translate-x-1/2 translate-y-2 transition duration-300" id="line3"></div>
+                                        </button>
+                                        <!-- Mobile Logo -->
+                                        <a href="/" class="ml-4">
+                                        <img src="https://www.zim.com/assets/g0mbdksc/zim80-logo-313x112-white.png?v=1dbd885c4363b20"
+                                            class="h-[40px] w-auto" alt="ZIM Mobile Logo">
+                                        </a>
+                                    </div>
+                                    <!-- desktop_logo -->
+                                    <div class="hidden md:block">
+                                        <a href="/">
+                                        <img src="https://www.zim.com/assets/f4ln4see/logo80-tablets-light-200x112.png?v=1dbd9195eeea6f0"
+                                            class="h-[100px] w-auto mt-[40px]" alt="ZIM Logo">
+                                        </a>
+                                    </div>
+                                    <!-- Mobile Menu -->
+                                    <div id="mobile-menu" class="hidden flex-col space-y-2 mt-4 md:hidden bg-white text-[#002d72] rounded p-4">
+                                        <a href="#" class="block">ZIM Blog</a>
+                                        <a href="#" class="block">Contact Us</a>
+                                        <a href="#" class="block">Careers</a>
+                                        <a href="#" class="block">Investors</a>
+                                        <a href="#" class="block">Customer Updates</a>
+                                        <a href="#" class="block">Cargo Services</a>
+                                        <a href="#" class="block">Global Network</a>
+                                        <a href="#" class="block">Schedules</a>
+                                        <a href="#" class="block">Digital Solutions</a>
+                                        <a href="#" class="block">About ZIM</a>
+                                    </div>
+                                    <div class="md:hidden flex-end items-right">
+                                        <div role="button" class="pt-[20px] font-[Comfortaa] text-[18px]">
+                                            <label for="toggle" class="flex items-center bg-white text-[#004990] font-bold cursor-pointer border-none shadow-md font-[Comfortaa] text-[18px] h-[30px] rounded-[10px] w-full px-[11px] py-[5px] whitespace-nowrap">
+                                            I Need
+                                            <img id="myimg" class="w-[25px] h-[25px] transition-transform duration-500 ease-in-out ml-2" src="asset/down-arrow2-svgrepo-com (1).svg" alt="Tap to Rotate">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="w-full h-full">
+                                        <div class="hidden md:flex justify-end border-b border-white/30 py-[10px] text-[18px] font-light relative gap-[30px] w-full "><!--navtop-->
+                                            <a href="#" class="mx-2 hover:underline">ZIM Blog</a>
+                                            <a href="#" class="mx-2 hover:underline">Contact Us</a>
+                                            <a href="#" class="mx-2 hover:underline">Careers</a>
+                                            <a href="#" class="mx-2 hover:underline">Investors</a>
+                                            <a href="#" class="mx-2 hover:underline">Customer Updates</a>
+                                            <div class="relative mx-2">
+                                                <button id="media-button" class="flex items-center cursor-pointer focus:outline-none">
+                                                <span>Media</span>
+                                                <svg class="w-3 h-3 ml-1" fill="currentColor" viewBox="0 0 512 512">
+                                                    <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+                                                </svg>
+                                                </button>
+                                                <div id="media-dropdown" class="absolute right-0 mt-2 hidden bg-white text-[#002d72] rounded shadow-md">
+                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Press Releases</a>
+                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Gallery</a>
+                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Events</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-between h-[90px] w-full gap-[30px]">
+                                            <div class="hidden md:flex items-center space-x-6 w-full">
+                                                <div class="flex items-center">
+                                                    <div role="button" class="pt-[20px] font-[Comfortaa] text-[18px]">
+                                                        <label for="toggle" class="flex items-center bg-white text-[#004990] font-bold cursor-pointer border-none shadow-md font-[Comfortaa] text-[18px] h-[40px] rounded-[10px] w-full px-[11px] py-[5px] whitespace-nowrap">
+                                                        I Need
+                                                        <img id="myimg" class="w-[25px] h-[25px] transition-transform duration-500 ease-in-out ml-2" src="asset/down-arrow2-svgrepo-com (1).svg" alt="Tap to Rotate">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <ul class="flex justify-around list-none mb-0 p-0 flex-1 items-center pt-[20px] gap-[7px]">
+                                                    <li class="flex items-center cursor-pointer">
+                                                        <span class="text-white no-underline text-[18px] font-light">Cargo Services</span>
+                                                        <img class="w-[26px] h-[26px] transition-transform duration-500 ease-in-out ml-[2px]" src="asset/downarrow_white.svg" alt="">
+                                                    </li>
+                                                    <li><span class="text-white no-underline text-[18px] font-light">Global Network</span></li>
+                                                    <li class="flex items-center cursor-pointer">
+                                                        <span class="text-white no-underline text-[18px] font-light">Schedules</span>
+                                                        <img class="w-[26px] h-[26px] transition-transform duration-500 ease-in-out ml-[2px]" src="asset/downarrow_white.svg" alt="">
+                                                    </li>
+                                                    <li class="flex items-center cursor-pointer">
+                                                        <span class="text-white no-underline text-[18px] font-light">Digital Solutions</span>
+                                                        <img class="w-[26px] h-[26px] transition-transform duration-500 ease-in-out ml-[2px]" src="asset/downarrow_white.svg" alt="">
+                                                    </li>
+                                                    <li class="flex items-center cursor-pointer">
+                                                        <span class="text-white no-underline text-[18px] font-light">About ZIM</span>
+                                                        <img class="w-[26px] h-[26px] transition-transform duration-500 ease-in-out ml-[2px]" src="asset/downarrow_white.svg" alt="">
+                                                    </li>
+                                                </ul>
+                                                <ul class="flex list-none items-center mb-0 gap-[10px] pt-[20px]">
+                                                    <li><img src="data:image/svg+xml,%3csvg%20width='29'%20height='29'%20viewBox='0%200%2029%2029'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12.6595%2024.319C19.0989%2024.319%2024.319%2019.0989%2024.319%2012.6595C24.319%206.22014%2019.0989%201%2012.6595%201C6.22014%201%201%206.22014%201%2012.6595C1%2019.0989%206.22014%2024.319%2012.6595%2024.319Z'%20stroke='white'%20stroke-width='2'%20stroke-linejoin='round'/%3e%3cpath%20d='M27.6509%2027.6503L20.9883%2020.9877'%20stroke='white'%20stroke-width='2'%20stroke-linejoin='round'/%3e%3c/svg%3e" width="28" height="28" alt="Search logo"></li>
+                                                    <li class="flex items-center">
+                                                        <div class="flex items-center cursor-pointer text-white gap-[5px]  rounded-[4px] p-[2px]">
+                                                        <div class="rounded-[4px] overflow-hidden border border-white flex items-center justify-center">
+                                                        <img src="https://www.zim.com/static/images/flags/IN.svg" width="35" height="40" alt="IN flag">
+                                                        </div >
+                                                        <div class="text-[25px] font-light text-white">EN</div>
+                                                        <img class="w-[26px] h-[26px] transition-transform duration-500 ease-in-out ml-[2px]" src="asset/downarrow_white.svg" alt="">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="relative flex items-center gap-[8px]">
+                                                        <img class="transition-transform duration-200" src="data:image/svg+xml,%3csvg%20width='31'%20height='31'%20viewBox='0%200%2031%2031'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M6.13867%2026.068C6.65502%2023.0698%208.62881%2020.5713%2011.3105%2019.3304'%20stroke='white'%20stroke-width='2'%20stroke-miterlimit='10'/%3e%3cpath%20d='M19.0059%2019.3304C19.9886%2019.7885%2020.8797%2020.4131%2021.6376%2021.171C22.9451%2022.4785%2023.8529%2024.1691%2024.1777%2026.068'%20stroke='white'%20stroke-width='2'%20stroke-miterlimit='10'/%3e%3cpath%20d='M15.158%2029.316C22.9772%2029.316%2029.316%2022.9772%2029.316%2015.158C29.316%207.33875%2022.9772%201%2015.158%201C7.33875%201%201%207.33875%201%2015.158C1%2022.9772%207.33875%2029.316%2015.158%2029.316Z'%20stroke='white'%20stroke-width='2'%20stroke-miterlimit='10'/%3e%3cpath%20d='M15.1579%2020.9877C18.3776%2020.9877%2020.9876%2018.0048%2020.9876%2014.3251C20.9876%2010.6455%2018.3776%207.66257%2015.1579%207.66257C11.9382%207.66257%209.32812%2010.6455%209.32812%2014.3251C9.32812%2018.0048%2011.9382%2020.9877%2015.1579%2020.9877Z'%20stroke='white'%20stroke-width='2'%20stroke-miterlimit='10'/%3e%3c/svg%3e" width="28" height="28">
+                                                        <span class="w-[62px] text-white leading-[20px]">Login or Register</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
