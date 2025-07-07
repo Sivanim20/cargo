@@ -5,6 +5,10 @@ body{
 {
     transition: filter .3s;
 }
+.rotated
+{
+    transform:rotate(180deg);
+}
 .navbar
 {
     font-family: 'Assistant';
@@ -21,7 +25,13 @@ body{
 .ineed{
     font-family: "Michroma",sans-serif;
 }
-
+.scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
 @media screen and (max-width: 1199px) {
     .navbar_logo_mob
  {

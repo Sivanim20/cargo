@@ -5,76 +5,73 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
         <title>International Shipping Lines,Container Shipping, Cargo Service | ZIM</title>
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Comfortaa:wght@300..700&family=Michroma&display=swap" rel="stylesheet">
     </head>
     <body class="m-0">
-        <div> <!-- main_div -->
-            <div class="m-0"><!--Title-home-->
-                <div><!--navigation-->
-
-                </div>
+        <header class="relative"><!--Title-home-->
                 <div class="relative overflow-hidden min-h-screen flex-col flex wrapper"><!--Wrapper-->
-                    <div class="h-[149px] -left-0 top-0 fixed -right-0 z-[4000] "><!--navbarReact-->
+                    <div class="h-[149px] -left-0 top-0 absolute -right-0 z-[4000] "><!--navbarReact-->
                         <div><!--newui-->
-                            <div class="bg-gradient-to-b from-[#002d72] to-transparent h-[164px]"><!--Navbar_top-->
+                            <div class="bg-gradient-to-b from-[#002d72] via-[#002d72] to-transparent h-[164px]"><!--Navbar_top-->
                                 <div class="navbar flex items-center justify-between h-[90px] text-white flex relative  items-center bg-transparent max-w-[1920px] mr-auto ml-auto pl-[30px] pr-[50px]"><!--navbar-->
-                                    
-                                    <div class="md:hidden flex items-center ">
-                                        <button id="menu-toggle" class="relative w-8 h-8 focus:outline-none">
-                                            <div class="absolute top-1/2 left-1/2 w-6 h-[2px] bg-white transform -translate-x-1/2 -translate-y-2 transition duration-300" id="line1"></div>
-                                            <div class="absolute top-1/2 left-1/2 w-6 h-[2px] bg-white transform -translate-x-1/2 translate-y-0 transition duration-300" id="line2"></div>
-                                            <div class="absolute top-1/2 left-1/2 w-6 h-[2px] bg-white transform -translate-x-1/2 translate-y-2 transition duration-300" id="line3"></div>
-                                        </button>
-                                        <!-- Mobile Logo -->
-                                        <a href="/" class="ml-4">
-                                        <img src="https://www.zim.com/assets/g0mbdksc/zim80-logo-313x112-white.png?v=1dbd885c4363b20"
+                                    <!-- Mobile Nav -->
+                                    <div class="flex lg:hidden justify-between items-center px-4 py-2">
+                                        <div >
+                                            <button id="menu-toggle" class="relative w-8 h-8 focus:outline-none">
+                                                <div class="absolute top-1/2 left-1/2 w-6 h-[2px] bg-white transform -translate-x-1/2 -translate-y-2 transition duration-300" id="line1"></div>
+                                                <div class="absolute top-1/2 left-1/2 w-6 h-[2px] bg-white transform -translate-x-1/2 translate-y-0 transition duration-300" id="line2"></div>
+                                                <div class="absolute top-1/2 left-1/2 w-6 h-[2px] bg-white transform -translate-x-1/2 translate-y-2 transition duration-300" id="line3"></div>
+                                            </button>
+                                            <!-- Mobile Logo -->
+                                            <a href="/" class="ml-4">
+                                            <img src="https://www.zim.com/assets/g0mbdksc/zim80-logo-313x112-white.png?v=1dbd885c4363b20"
                                             class="h-[40px] w-auto" alt="ZIM Mobile Logo">
-                                        </a>
+                                            </a>
+                                            <!-- Mobile Menu -->
+                                            <div id="mobile-menu" class="hidden flex-col space-y-2 mt-4 md:hidden bg-white text-[#002d72] rounded p-4">
+                                                <a href="#" class="block">ZIM Blog</a>
+                                                <a href="#" class="block">Contact Us</a>
+                                                <a href="#" class="block">Careers</a>
+                                                <a href="#" class="block">Investors</a>
+                                                <a href="#" class="block">Customer Updates</a>
+                                                <a href="#" class="block">Cargo Services</a>
+                                                <a href="#" class="block">Global Network</a>
+                                                <a href="#" class="block">Schedules</a>
+                                                <a href="#" class="block">Digital Solutions</a>
+                                                <a href="#" class="block">About ZIM</a>
+                                            </div>
+                                        </div>
+                                        <button class="px-3 py-1 bg-white text-blue-900 rounded-md font-bold text-sm flex items-center">
+                                                I Need
+                                                <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M5 8l5 5 5-5H5z" />
+                                                </svg>
+                                            </button>
                                     </div>
+
+                                    
                                     <!-- desktop_logo -->
                                     <div class="hidden md:block">
                                         <a href="/">
                                         <img src="https://www.zim.com/assets/f4ln4see/logo80-tablets-light-200x112.png?v=1dbd9195eeea6f0"
-                                            class="h-[100px] w-auto mt-[40px]" alt="ZIM Logo">
+                                            class="h-[120px] w-[220px] mt-[60px]" alt="ZIM Logo">
                                         </a>
                                     </div>
-                                    <!-- Mobile Menu -->
-                                    <div id="mobile-menu" class="hidden flex-col space-y-2 mt-4 md:hidden bg-white text-[#002d72] rounded p-4">
-                                        <a href="#" class="block">ZIM Blog</a>
-                                        <a href="#" class="block">Contact Us</a>
-                                        <a href="#" class="block">Careers</a>
-                                        <a href="#" class="block">Investors</a>
-                                        <a href="#" class="block">Customer Updates</a>
-                                        <a href="#" class="block">Cargo Services</a>
-                                        <a href="#" class="block">Global Network</a>
-                                        <a href="#" class="block">Schedules</a>
-                                        <a href="#" class="block">Digital Solutions</a>
-                                        <a href="#" class="block">About ZIM</a>
-                                    </div>
-                                    <div class="md:hidden flex-end items-right">
-                                        <div role="button" class="pt-[20px] font-[Comfortaa] text-[18px]">
-                                            <label for="toggle" class="flex items-center bg-white text-[#004990] font-bold cursor-pointer border-none shadow-md font-[Comfortaa] text-[18px] h-[30px] rounded-[10px] w-full px-[11px] py-[5px] whitespace-nowrap">
-                                            I Need
-                                            <img id="myimg" class="w-[25px] h-[25px] transition-transform duration-500 ease-in-out ml-2" src="asset/down-arrow2-svgrepo-com (1).svg" alt="Tap to Rotate">
-                                            </label>
-                                        </div>
-                                    </div>
+                                    <!--navbar_desktop-->
                                     <div class="w-full h-full">
                                         <div class="hidden md:flex justify-end border-b border-white/30 py-[10px] text-[18px] font-light relative gap-[30px] w-full "><!--navtop-->
-                                            <a href="#" class="mx-2 hover:underline">ZIM Blog</a>
-                                            <a href="#" class="mx-2 hover:underline">Contact Us</a>
-                                            <a href="#" class="mx-2 hover:underline">Careers</a>
-                                            <a href="#" class="mx-2 hover:underline">Investors</a>
-                                            <a href="#" class="mx-2 hover:underline">Customer Updates</a>
+                                            <a href="#" class="mx-2 hover:border-b-[5px] border-white">ZIM Blog</a>
+                                            <a href="#" class="mx-2 hover:border-b-[5px] border-white">Contact Us</a>
+                                            <a href="#" class="mx-2 hover:border-b-[5px] border-white">Careers</a>
+                                            <a href="#" class="mx-2 hover:border-b-[5px] border-white">Investors</a>
+                                            <a href="#" class="mx-2 hover:border-b-[5px] border-white">Customer Updates</a>
                                             <div class="relative mx-2">
-                                                <button id="media-button" class="flex items-center cursor-pointer focus:outline-none">
+                                                <button id="media-button" class="flex items-center cursor-pointer focus:outline-none ">
                                                 <span>Media</span>
-                                                <svg class="w-3 h-3 ml-1" fill="currentColor" viewBox="0 0 512 512">
-                                                    <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
-                                                </svg>
+                                                <img id="myimg6" class="w-[25px] h-[25px] transition-transform duration-500 ease-in-out ml-2" id="myimg" src="asset\downarrow_white.svg" alt="Tap to Rotate">
                                                 </button>
                                                 <div id="media-dropdown" class="absolute right-0 mt-2 hidden bg-white text-[#002d72] rounded shadow-md">
                                                     <a href="#" class="block px-4 py-2 hover:bg-gray-100">Press Releases</a>
@@ -89,44 +86,44 @@
                                                     <div role="button" class="pt-[20px] font-[Comfortaa] text-[18px]">
                                                         <label for="toggle" class="flex items-center bg-white text-[#004990] font-bold cursor-pointer border-none shadow-md font-[Comfortaa] text-[18px] h-[40px] rounded-[10px] w-full px-[11px] py-[5px] whitespace-nowrap">
                                                         I Need
-                                                        <img id="myimg" class="w-[25px] h-[25px] transition-transform duration-500 ease-in-out ml-2" src="asset/down-arrow2-svgrepo-com (1).svg" alt="Tap to Rotate">
+                                                        <img id="myimg" class="w-[25px] h-[25px] transition-transform duration-500 ease-in-out ml-2" id="myimg" src="asset/down-arrow2-svgrepo-com (1).svg" alt="Tap to Rotate">
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <ul class="flex justify-around list-none mb-0 p-0 flex-1 items-center pt-[20px] gap-[7px]">
-                                                    <li class="flex items-center cursor-pointer">
+                                                <ul class="flex relative justify-around list-none mb-0 p-0 flex-1 items-center pt-[20px] gap-[7px]">
+                                                    <li class="flex items-center cursor-pointer hover:border-b-[5px] border-whites">
                                                         <span class="text-white no-underline text-[18px] font-light">Cargo Services</span>
-                                                        <img class="w-[26px] h-[26px] transition-transform duration-500 ease-in-out ml-[2px]" src="asset/downarrow_white.svg" alt="">
+                                                        <img class="w-[26px] h-[26px] transition-transform duration-500 ease-in-out ml-[2px]" id="myimg2" src="asset/downarrow_white.svg" alt="">
                                                     </li>
-                                                    <li><span class="text-white no-underline text-[18px] font-light">Global Network</span></li>
-                                                    <li class="flex items-center cursor-pointer">
+                                                    <li><span class="text-white no-underline text-[18px] font-light hover:border-b-[5px] border-white">Global Network</span></li>
+                                                    <li class="flex items-center cursor-pointer hover:border-b-[5px] border-white">
                                                         <span class="text-white no-underline text-[18px] font-light">Schedules</span>
-                                                        <img class="w-[26px] h-[26px] transition-transform duration-500 ease-in-out ml-[2px]" src="asset/downarrow_white.svg" alt="">
+                                                        <img class="w-[26px] h-[26px] transition-transform duration-500 ease-in-out ml-[2px]" id="myimg3" src="asset/downarrow_white.svg" alt="">
                                                     </li>
-                                                    <li class="flex items-center cursor-pointer">
+                                                    <li class="flex items-center cursor-pointer hover:border-b-[5px] border-white">
                                                         <span class="text-white no-underline text-[18px] font-light">Digital Solutions</span>
-                                                        <img class="w-[26px] h-[26px] transition-transform duration-500 ease-in-out ml-[2px]" src="asset/downarrow_white.svg" alt="">
+                                                        <img class="w-[26px] h-[26px] transition-transform duration-500 ease-in-out ml-[2px]" id="myimg4" src="asset/downarrow_white.svg" alt="">
                                                     </li>
-                                                    <li class="flex items-center cursor-pointer">
+                                                    <li class="flex items-center cursor-pointer hover:border-b-[5px] border-white">
                                                         <span class="text-white no-underline text-[18px] font-light">About ZIM</span>
-                                                        <img class="w-[26px] h-[26px] transition-transform duration-500 ease-in-out ml-[2px]" src="asset/downarrow_white.svg" alt="">
+                                                        <img class="w-[26px] h-[26px] transition-transform duration-500 ease-in-out ml-[2px]" id="myimg5" src="asset/downarrow_white.svg" alt="">
                                                     </li>
                                                 </ul>
                                                 <ul class="flex list-none items-center mb-0 gap-[10px] pt-[20px]">
                                                     <li><img src="data:image/svg+xml,%3csvg%20width='29'%20height='29'%20viewBox='0%200%2029%2029'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12.6595%2024.319C19.0989%2024.319%2024.319%2019.0989%2024.319%2012.6595C24.319%206.22014%2019.0989%201%2012.6595%201C6.22014%201%201%206.22014%201%2012.6595C1%2019.0989%206.22014%2024.319%2012.6595%2024.319Z'%20stroke='white'%20stroke-width='2'%20stroke-linejoin='round'/%3e%3cpath%20d='M27.6509%2027.6503L20.9883%2020.9877'%20stroke='white'%20stroke-width='2'%20stroke-linejoin='round'/%3e%3c/svg%3e" width="28" height="28" alt="Search logo"></li>
-                                                    <li class="flex items-center">
+                                                    <li class="flex items-center hover:border-b-[5px] border-white">
                                                         <div class="flex items-center cursor-pointer text-white gap-[5px]  rounded-[4px] p-[2px]">
-                                                        <div class="rounded-[4px] overflow-hidden border border-white flex items-center justify-center">
-                                                        <img src="https://www.zim.com/static/images/flags/IN.svg" width="35" height="40" alt="IN flag">
-                                                        </div >
-                                                        <div class="text-[25px] font-light text-white">EN</div>
-                                                        <img class="w-[26px] h-[26px] transition-transform duration-500 ease-in-out ml-[2px]" src="asset/downarrow_white.svg" alt="">
+                                                            <div class="rounded-[4px] overflow-hidden border border-white flex items-center justify-center">
+                                                                <img src="https://www.zim.com/static/images/flags/IN.svg" width="35" height="40" alt="IN flag">
+                                                            </div >
+                                                            <div class="text-[25px] font-light text-white">EN</div>
+                                                            <img class="w-[26px] h-[26px] transition-transform duration-500 ease-in-out ml-[2px]" src="asset/downarrow_white.svg" alt="">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="relative flex items-center gap-[8px]">
-                                                        <img class="transition-transform duration-200" src="data:image/svg+xml,%3csvg%20width='31'%20height='31'%20viewBox='0%200%2031%2031'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M6.13867%2026.068C6.65502%2023.0698%208.62881%2020.5713%2011.3105%2019.3304'%20stroke='white'%20stroke-width='2'%20stroke-miterlimit='10'/%3e%3cpath%20d='M19.0059%2019.3304C19.9886%2019.7885%2020.8797%2020.4131%2021.6376%2021.171C22.9451%2022.4785%2023.8529%2024.1691%2024.1777%2026.068'%20stroke='white'%20stroke-width='2'%20stroke-miterlimit='10'/%3e%3cpath%20d='M15.158%2029.316C22.9772%2029.316%2029.316%2022.9772%2029.316%2015.158C29.316%207.33875%2022.9772%201%2015.158%201C7.33875%201%201%207.33875%201%2015.158C1%2022.9772%207.33875%2029.316%2015.158%2029.316Z'%20stroke='white'%20stroke-width='2'%20stroke-miterlimit='10'/%3e%3cpath%20d='M15.1579%2020.9877C18.3776%2020.9877%2020.9876%2018.0048%2020.9876%2014.3251C20.9876%2010.6455%2018.3776%207.66257%2015.1579%207.66257C11.9382%207.66257%209.32812%2010.6455%209.32812%2014.3251C9.32812%2018.0048%2011.9382%2020.9877%2015.1579%2020.9877Z'%20stroke='white'%20stroke-width='2'%20stroke-miterlimit='10'/%3e%3c/svg%3e" width="28" height="28">
-                                                        <span class="w-[62px] text-white leading-[20px]">Login or Register</span>
+                                                            <img class="transition-transform duration-200 hover:scale-110 cursor-pointer" src="data:image/svg+xml,%3csvg%20width='31'%20height='31'%20viewBox='0%200%2031%2031'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M6.13867%2026.068C6.65502%2023.0698%208.62881%2020.5713%2011.3105%2019.3304'%20stroke='white'%20stroke-width='2'%20stroke-miterlimit='10'/%3e%3cpath%20d='M19.0059%2019.3304C19.9886%2019.7885%2020.8797%2020.4131%2021.6376%2021.171C22.9451%2022.4785%2023.8529%2024.1691%2024.1777%2026.068'%20stroke='white'%20stroke-width='2'%20stroke-miterlimit='10'/%3e%3cpath%20d='M15.158%2029.316C22.9772%2029.316%2029.316%2022.9772%2029.316%2015.158C29.316%207.33875%2022.9772%201%2015.158%201C7.33875%201%201%207.33875%201%2015.158C1%2022.9772%207.33875%2029.316%2015.158%2029.316Z'%20stroke='white'%20stroke-width='2'%20stroke-miterlimit='10'/%3e%3cpath%20d='M15.1579%2020.9877C18.3776%2020.9877%2020.9876%2018.0048%2020.9876%2014.3251C20.9876%2010.6455%2018.3776%207.66257%2015.1579%207.66257C11.9382%207.66257%209.32812%2010.6455%209.32812%2014.3251C9.32812%2018.0048%2011.9382%2020.9877%2015.1579%2020.9877Z'%20stroke='white'%20stroke-width='2'%20stroke-miterlimit='10'/%3e%3c/svg%3e" width="28" height="28">
+                                                            <span class="w-[62px] text-white leading-[20px] hover:border-b-[5px] border-white">Login or Register</span>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -137,11 +134,262 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
+                    <section class="sm:relative relative text-white bg-cover bg-center h-[740px]" style="background-image: url('https://www.zim.com/assets/dakfozjo/zim-sammy-ofer_panama_wlu_desktop.webp');">
+                        <div class=" py-16 px-4 text-left mt-[180px] ml-[50px]">
+                        <h1 class="text-5xl md:text-5xl font-light font-[Michroma] font-bold">Innovative Shipping <br /><br /> Dedicated to You</h1>
+                        <br>
+                        <button class=" mx-[60px] mt-[17px] text-[#002d72] bg-white rounded-[10px] px-0 py-[15px] w-[350px] h-[60px] flex justify-center items-center text-[22px] leading-[26px] font-normal font-[Assistant]">Request a Quote</button>
+                        </div>
+
+                        <!-- Tracking box -->
+                        <div class="absolute right-5 top-1/2 transform -translate-y-1/2 bg-white text-[#002f5f] p-6 rounded-lg shadow-lg w-[500px] font-[Assistant] ">
+                            <div class="flex border-b border-[#d1d1d1] mb-4">
+                                <button class="tab-btn w-full py-3 text-[20px] font-bold text-blue-1000 border-b-4 border-blue-900 font-[Assistant, sans-serif]" onclick="showTab('tracking', this)">Tracking</button>
+                                <button class="tab-btn w-full py-3 text-[20px] font-bold text-blue-1000 border-b-4 border-transparent hover:border-b-4 border-blue-900" onclick="showTab('schedules', this)">Schedules</button>
+                                <button class="tab-btn w-full py-3 text-[20px] font-bold text-blue-1000 border-b-4 border-transparent hover:border-b-4 border-blue-900" onclick="showTab('offices', this)">Offices</button>
+                            </div>
+                            <div class="tab-content space-y-3" id="tracking">
+                                <label class="block text-sm font-medium text-gray-700 text-left text-[18px]">Track by</label>
+                                <input type="text" placeholder="Container(s) / Booking(s) / B/L(s) Number"class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none h-[60px]"/>
+                                <p class="text-s text-[#424280] ">Trace multiple shipments by using your reference number(s)</p>
+                                <button class="w-full bg-blue-900 text-white py-2 rounded-md hover:bg-[#002d72] h-[60px]">Search</button>
+                            </div>
+                            <div class="tab-content space-y-3 hidden" id="schedules">
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none text-gary-300">
+                                    <option class="text-gary-300">Point To Point</option>
+                                </select>
+                                <input type="text" placeholder="Origin" class="w-full px-4 py-2 border border-gray-300 rounded-md"/>
+                                <input type="text" placeholder="Destination" class="w-full px-4 py-2 border border-gray-300 rounded-md"/>
+                                <button class="w-full bg-blue-900 text-white py-2 rounded-md hover:bg-[#002d72] h-[60px]">Search</button>
+                            </div>
+                            <div class="tab-content space-y-3 hidden" id="offices">
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none">
+                                    <option>India</option>
+                                    <option>USA</option>
+                                    <option>Germany</option>
+                                </select>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none">
+                                    <option>Branch</option>
+                                    <option>Mumbai</option>
+                                    <option>Delhi</option>
+                                </select>
+                                <button class="w-full bg-blue-900 text-white py-2 rounded-md hover:bg-[#002d72] h-[60px]">Search</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="sm:absolute absolute bg-white w-[90%] h-[70px]  rounded-[10px] flex items-center ml-[40px] shadow-[0_4px_8px_0_rgba(0,0,0,0.2),0_6px_20px_0_rgba(0,0,0,0.19)]  bottom-[-20px]">
+                    <div class=" flex bg-transparent items-center gap-4 overflow-hidden w-full ">
+                        <div class="news-ticker w-full ">
+                            <div id="news-box" class="news-box transition-transform duration-500 ease-in-out will-change-transform w-full">
+                                <div class="news-item text-black w-auto text-[20px]" id="news-content">
+                                    <span class="text-[#1949b8] font-bold mr-2 ml-2">11 JUN 2025</span><a href="#"> | NBF (New Bunker Factor*) update </a>
+                                </div>
+                            </div>
+                        </div>
+                    <a href="#" class="text-blue-900 font-bold underline hover:text-blue-950 whitespace-nowrap mr-[10px] text-sm ">Show More</a>
                 </div>
             </div>
+        </header>
+        <section class="mt-[100px]"><!--detail cards-->
+             <div class="relative w-full overflow-hidden px-4 py-10">
+                <ul class="carousel grid grid-flow-col auto-cols-[calc(100%/3-12px)] gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide">
+                <!-- Card 1 -->
+                <li class="card flex flex-col w-[390px] bg-gray-100 shadow-[0_3px_6px_rgba(0,0,0,0.23)] rounded-[15px] relative overflow-hidden cursor-pointer snap-start">
+                    <div class="relative ">
+                        <div class="overflow-hidden h-[300px] rounded-t-[15px] ">
+                            <img src="asset/card1.png" alt="Card 1" class="w-full h-full object-cover transition-transform duration-500 transform hover:scale-110"/>
+                        </div>
+                        <h3 class="font-bold text-lg font-[Michroma] text-blue-800 text-[30px] m-4">Explore ZIM’s company culture and job opportunities.</h3>
+                        <div class="flex m-4"><a href="#" class="text-blue-900 text-[20px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg?v=-7--KikKqszQjvI1TUX-as9z4UA" class="w-[20px] h-[px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+                    </div>
+                </li>
 
-        </div>
+                <!-- Card 2 -->
+                <li class="card flex flex-col w-[390px] bg-gray-100 shadow-[0_3px_6px_rgba(0,0,0,0.23)] rounded-[15px] relative overflow-hidden cursor-pointer snap-start">
+                    <div class="relative ">
+                        <div class="overflow-hidden h-[300px] rounded-t-[15px] ">
+                            <img src="asset/card2.png" alt="Card 2" class="w-full h-full object-cover transition-transform duration-500 transform hover:scale-110"/>
+                        </div>
+                        <h3 class="font-bold text-lg font-[Michroma] text-blue-800 text-[30px] m-4">Quotes and bookings are now available with a single sign-in!</h3>
+                        <div class="flex m-4"><a href="#" class="text-blue-900 text-[20px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg?v=-7--KikKqszQjvI1TUX-as9z4UA" class="w-[20px] h-[px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+                    </div>
+                </li>
+
+                <!-- Card 3 -->
+                <li class="card flex flex-col w-[390px] bg-gray-100 shadow-[0_3px_6px_rgba(0,0,0,0.23)] rounded-[15px] relative overflow-hidden cursor-pointer snap-start">
+                    <div class="relative ">
+                        <div class="overflow-hidden h-[300px] rounded-t-[15px] ">
+                            <img src="asset/card3.png" alt="Card 3" class="w-full h-full object-cover transition-transform duration-500 transform hover:scale-110"/>
+                        </div>
+                        <h3 class="font-bold text-lg font-[Michroma] text-blue-800 text-[30px] m-4">Access your shipment details immediately after vessel departure.</h3>
+                        <div class="flex m-4"><a href="#" class="text-blue-900 text-[20px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg?v=-7--KikKqszQjvI1TUX-as9z4UA" class="w-[20px] h-[px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+                    </div>
+                </li>
+
+                <!-- Card 4 -->
+                <li class="card flex flex-col w-[390px] bg-gray-100 shadow-[0_3px_6px_rgba(0,0,0,0.23)] rounded-[15px] relative overflow-hidden cursor-pointer snap-start">
+                    <div class="relative ">
+                        <div class="overflow-hidden h-[300px] rounded-t-[15px] ">
+                            <img src="asset/card4.png" alt="Card 4" class="w-full h-full object-cover transition-transform duration-500 transform hover:scale-110"/>
+                        </div>
+                        <h3 class="font-bold text-lg font-[Michroma] text-blue-800 text-[30px] m-4">New air service to / from Israel<br/>>Contact us today!</h3>
+                        <div class="flex m-4"><a href="#" class="text-blue-900 text-[20px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg?v=-7--KikKqszQjvI1TUX-as9z4UA" class="w-[20px] h-[px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+                    </div>
+                </li>
+
+                <!-- Card 5 -->
+                <li class="card flex flex-col w-[390px] bg-gray-100 shadow-[0_3px_6px_rgba(0,0,0,0.23)] rounded-[15px] relative overflow-hidden cursor-pointer snap-start">
+                    <div class="relative ">
+                        <div class="overflow-hidden h-[300px] rounded-t-[15px] ">
+                            <img src="asset/card5.png" alt="Card 5" class="w-full h-full object-cover transition-transform duration-500 transform hover:scale-110"/>
+                        </div>
+                        <h3 class="font-bold text-lg font-[Michroma] text-blue-800 text-[30px] m-4">Explore our Reefer Cargo solutions!</h3>
+                        <div class="flex m-4"><a href="#" class="text-blue-900 text-[20px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg?v=-7--KikKqszQjvI1TUX-as9z4UA" class="w-[20px] h-[px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+                    </div>
+                </li>
+                <!-- Card 6 -->
+                <li class="card flex flex-col w-[390px] bg-gray-100 shadow-[0_3px_6px_rgba(0,0,0,0.23)] rounded-[15px] relative overflow-hidden cursor-pointer snap-start">
+                    <div class="relative ">
+                        <div class="overflow-hidden h-[300px] rounded-t-[15px] ">
+                            <img src="asset/card6.png" alt="Card 6" class="w-full h-full object-cover transition-transform duration-500 transform hover:scale-110"/>
+                        </div>
+                        <h3 class="font-bold text-lg font-[Michroma] text-blue-800 text-[30px] m-4">Digital Draft B/L in 5 Steps: No registration needed!</h3>
+                        <div class="flex m-4 " href="#"><a href="#" class="text-blue-900 text-[20px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg?v=-7--KikKqszQjvI1TUX-as9z4UA" class="w-[20px] h-[px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+                    </div>
+                </li>
+                </ul>
+
+                <!-- Arrow buttons -->
+                <i id="left" class="fas fa-angle-left absolute top-1/2 left-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-left-solid.svg"></i>
+                <i id="right" class="fas fa-angle-right absolute top-1/2 right-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-right-solid.svg"></i>
+            </div>
+        </section>
+        <section class="mt-[50px]"><!--cargo cards-->
+            <div class="flex relative">
+                <div class="flex w-[80%] h-[70px] font-[Michroma] text-blue-900 text-[50px] ml-4">Cargo Services</div>
+                <div class="flex m-4"><a href="#" class="text-blue-900 text-[22px] inline-block font-[Assistant] mr-2 ">All Cargo Services </a><img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg?v=-7--KikKqszQjvI1TUX-as9z4UA" class="w-[20px] h-[px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+            </div>
+             <div class="relative w-full overflow-hidden px-4 py-10">
+                <ul class="carousel1 ml-8 grid grid-flow-col auto-cols-[calc(100%/4-12px)] gap-3 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide">
+                    <!-- Card 1 -->
+                    <li class="card1 relative w-[270px] h-[500px] rounded-[10px] overflow-hidden cursor-pointer shadow-[0_3px_6px_rgba(0,0,0,0.23)] group">
+                        <!-- Background Image -->
+                        <img src="https://www.zim.com/assets/jxvfv0ue/img_1149_dry_cargo.webp" alt="Dry Cargo" class="w-full h-full object-cover" />
+
+                        <!-- Always visible bottom gradient + title -->
+                        <div class="absolute h-[50%]  bottom-0 left-0 w-full bg-gradient-to-t from-[#041d40] to-transparent text-white p-4 z-10 transition-opacity duration-500 group-hover:opacity-0">
+                            <h3 class="text-[20px] font-bold font-[Michroma] mt-[65%] text-[25px]">Dry Cargo</h3>
+                        </div>
+
+                        <!-- Hover Content with lighter blue background -->
+                        <div class="absolute inset-0 bg-[#041d40]/65 text-white p-4 flex flex-col justify-end transform translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out z-20">
+                            <div class="mt-auto">
+                            <h3 class="text-[24px] font-bold mb-2 font-[Michroma] mb-12">Dry Cargo</h3>
+                            <p class="text-[20px] mb-2 font-[Assistant] mt-4">
+                                Whether you're shipping ceramic kittens or football jerseys, toilet paper or big-screen TVs, our containers are ready.
+                            </p>
+                            <div class="flex m-5 " href="#"><a href="#" class="text-white text-[17px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/static/images/arrow-right-solid-white.svg" class="mt-[5px] w-[20px] h-[20px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Card 2 -->
+                    <li class="card1 relative w-[270px] h-[500px] rounded-[10px] overflow-hidden cursor-pointer shadow-[0_3px_6px_rgba(0,0,0,0.23)] group">
+                        <!-- Background Image -->
+                        <img src="https://www.zim.com/assets/1mydfag2/italy-zimonitor.webp" alt="Dry Cargo" class="w-full h-full object-cover" />
+
+                        <!-- Always visible bottom gradient + title -->
+                        <div class="absolute h-[50%]  bottom-0 left-0 w-full bg-gradient-to-t from-[#041d40] to-transparent text-white p-4 z-10 transition-opacity duration-500 group-hover:opacity-0">
+                            <h3 class="text-[20px] font-bold font-[Michroma] mt-[65%] text-[25px]">Reefer Cargo</h3>
+                        </div>
+
+                        <!-- Hover Content with lighter blue background -->
+                        <div class="absolute inset-0 bg-[#041d40]/65 text-white p-4 flex flex-col justify-end transform translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out z-20">
+                            <div class="mt-auto">
+                            <h3 class="text-[24px] font-bold mb-2 font-[Michroma] mb-12">Reefer Cargo</h3>
+                            <p class="text-[20px] mb-2 font-[Assistant] mt-4">
+                                From fruit, meat, medicines, or sensitive cargo, ZIM's refrigerated containers are equipped to provide advanced transport you can rely on.
+                            </p>
+                            <div class="flex m-5 " href="#"><a href="#" class="text-white text-[17px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/static/images/arrow-right-solid-white.svg" class="mt-[5px] w-[20px] h-[20px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+                            </div>
+                        </div>
+                    </li>
+                
+                    <!-- Card 3 -->
+                     <li class="card1 relative w-[270px] h-[500px] rounded-[10px] overflow-hidden cursor-pointer shadow-[0_3px_6px_rgba(0,0,0,0.23)] group">
+                        <!-- Background Image -->
+                        <img src="https://www.zim.com/assets/3gon4bmw/img_1969_project_cargo.webp" alt="Dry Cargo" class="w-full h-full object-cover" />
+
+                        <!-- Always visible bottom gradient + title -->
+                        <div class="absolute h-[50%]  bottom-0 left-0 w-full bg-gradient-to-t from-[#041d40] to-transparent text-white p-4 z-10 transition-opacity duration-500 group-hover:opacity-0">
+                            <h3 class="text-[20px] font-bold font-[Michroma] mt-[65%] text-[25px]">Special Cargo</h3>
+                        </div>
+
+                        <!-- Hover Content with lighter blue background -->
+                        <div class="absolute inset-0 bg-[#041d40]/65 text-white p-4 flex flex-col justify-end transform translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out z-20">
+                            <div class="mt-auto">
+                            <h3 class="text-[24px] font-bold mb-2 font-[Michroma] mb-12">Special Cargo</h3>
+                            <p class="text-[20px] mb-2 font-[Assistant] mt-4">
+                               Equipped with flats, open tops, tankers, and monitoring equipment, we are prepared to handle a diverse range of non-standard shipments.
+                            </p>
+                            <div class="flex m-5 " href="#"><a href="#" class="text-white text-[17px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/static/images/arrow-right-solid-white.svg" class="mt-[5px] w-[20px] h-[20px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+                            </div>
+                        </div>
+                    </li>
+                
+                    <!-- Card 4 -->
+                    <li class="card1 relative w-[270px] h-[500px] rounded-[10px] overflow-hidden cursor-pointer shadow-[0_3px_6px_rgba(0,0,0,0.23)] group">
+                        <!-- Background Image -->
+                        <img src="https://www.zim.com/assets/psipqe4k/new-zealand-bac1895_inland_transport.webp" alt="Dry Cargo" class="w-full h-full object-cover" />
+
+                        <!-- Always visible bottom gradient + title -->
+                        <div class="absolute h-[50%]  bottom-0 left-0 w-full bg-gradient-to-t from-[#041d40] to-transparent text-white p-4 z-10 transition-opacity duration-500 group-hover:opacity-0">
+                            <h3 class="text-[20px] font-bold font-[Michroma] mt-[65%] text-[25px]">Dry Cargo</h3>
+                        </div>
+
+                        <!-- Hover Content with lighter blue background -->
+                        <div class="absolute inset-0 bg-[#041d40]/65 text-white p-4 flex flex-col justify-end transform translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out z-20">
+                            <div class="mt-auto">
+                            <h3 class="text-[24px] font-bold mb-2 font-[Michroma] mb-12">Inland Transport</h3>
+                            <p class="text-[20px] mb-2 font-[Assistant] mt-4">
+                               By truck, rail, or barge, we’re your one point of contact for extensive land transport and door-to-door services.
+                            </p>
+                            <div class="flex m-5 " href="#"><a href="#" class="text-white text-[17px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/static/images/arrow-right-solid-white.svg" class="mt-[5px] w-[20px] h-[20px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Card 5 -->
+                    <li class="card1 relative w-[270px] h-[500px] rounded-[10px] overflow-hidden cursor-pointer shadow-[0_3px_6px_rgba(0,0,0,0.23)] group">
+                        <!-- Background Image -->
+                        <img src="https://www.zim.com/assets/u2nluxat/zimonitor-stacking-600x600.webp" alt="Dry Cargo" class="w-full h-full object-cover" />
+
+                        <!-- Always visible bottom gradient + title -->
+                        <div class="absolute h-[50%]  bottom-0 left-0 w-full bg-gradient-to-t from-[#041d40] to-transparent text-white p-4 z-10 transition-opacity duration-500 group-hover:opacity-0">
+                            <h3 class="text-[20px] font-bold font-[Michroma] mt-[65%] text-[25px]">ZIMonitor</h3>
+                        </div>
+
+                        <!-- Hover Content with lighter blue background -->
+                        <div class="absolute inset-0 bg-[#041d40]/65 text-white p-4 flex flex-col justify-end transform translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out z-20">
+                            <div class="mt-auto">
+                            <h3 class="text-[24px] font-bold mb-2 font-[Michroma] mb-12">ZIMonitor</h3>
+                            <p class="text-[20px] mb-2 font-[Assistant] mt-4">
+                                A real-time monitoring system that provides customers with 24/7 alerts on route deviations, temperature and humidity deviation on their valuable cargo.
+                            <div class="flex m-5 " href="#"><a href="#" class="text-white text-[17px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/static/images/arrow-right-solid-white.svg" class="mt-[5px] w-[20px] h-[20px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+                            </div>
+                        </div>
+                    </li>
+                
+
+                <!-- Arrow buttons -->
+                <i id="left" class="fas fa-angle-left absolute top-1/2 left-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-left-solid.svg"></i>
+                <i id="right" class="fas fa-angle-right absolute top-1/2 right-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-right-solid.svg"></i>
+            </div>
+        </section>
+                
         <script src="script.js"></script>
     </body>
 </html>
