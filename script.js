@@ -56,7 +56,8 @@ const menuToggle = document.getElementById('menu-toggle');
       const dropdown = document.getElementById('media-dropdown');
       dropdown.classList.toggle('hidden');
     });
-  function showTab(tabId, clickedButton) {
+  // trackking form
+  function showTab(tabId1, clickedButton) {
       document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
 
       document.querySelectorAll('.tab-btn').forEach(btn => {
@@ -66,10 +67,22 @@ const menuToggle = document.getElementById('menu-toggle');
       document.getElementById(tabId).classList.remove('hidden');
       clickedButton.classList.add('text-blue-900', 'border-blue-900');
       clickedButton.classList.remove('text-blue-900', 'border-transparent');
-    }
-setInterval(showNextNews, 3000);
+  }
 
+  function showTabMobile(tabId, clickedButton) {
+  document.querySelectorAll('.tab-content-mobile').forEach(tab => tab.classList.add('hidden'));
 
+  document.querySelectorAll('.tab-btn-mobile').forEach(btn => {
+    btn.classList.remove('text-blue-900', 'border-blue-900');
+    btn.classList.add('text-blue-900', 'border-transparent');
+  });
+
+  document.getElementById(tabId).classList.remove('hidden');
+  clickedButton.classList.add('text-blue-900', 'border-blue-900');
+  clickedButton.classList.remove('border-transparent');
+}
+
+// newsticker
 const newsItems = [
   '<span class="text-[#1949b8] font-bold mr-2 ml-2">11 JUN 2025</span><a href="#"> | NBF (New Bunker Factor*) update </a>',
   '<span class="text-[#1949b8] font-bold mr-2 ml-2">11 JUN 2025</span><a href="#"> | Green Fuel Surcharge (GFS) update</a>',
@@ -94,7 +107,9 @@ function showNextNews() {
     newsBox.style.transform = "translateY(0)";
   }, 500);
 }
+setInterval(showNextNews, 3000);
 
+// card scroll
 document.addEventListener("DOMContentLoaded", function () {
       const carousel = document.querySelector(".carousel");
       const arrowBtns = document.querySelectorAll(".fa-angle-left, .fa-angle-right");
@@ -139,8 +154,8 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
       const carousel1 = document.querySelector(".carousel1");
       const arrowBtns1 = document.querySelectorAll(".fa-angle-left, .fa-angle-right");
-      const firstCard1 = carousel.querySelector(".card1");
-      const firstCardWidth1 = firstCard.offsetWidth;
+      const firstCard1 = carousel1.querySelector(".card1");
+      const firstCardWidth1 = firstCard1.offsetWidth;
       let isDragging1 = false, startX, startScrollLeft;
 
       const dragStart = (e) => {

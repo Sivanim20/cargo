@@ -16,52 +16,49 @@
                     <div class="h-[149px] -left-0 top-0 absolute -right-0 z-[4000] "><!--navbarReact-->
                         <div><!--newui-->
                             <div class="bg-gradient-to-b from-[#002d72] via-[#002d72] to-transparent h-[164px]"><!--Navbar_top-->
-                                <div class="navbar flex items-center justify-between h-[90px] text-white flex relative  items-center bg-transparent max-w-[1920px] mr-auto ml-auto pl-[30px] pr-[50px]"><!--navbar-->
+                                <div class="navbar flex items-center justify-between h-[90px] text-white  bg-transparent max-w-[1920px] mx-auto px-4 sm:px-[30px] pr-[50px]"><!--navbar-->
                                     <!-- Mobile Nav -->
-                                    <div class="flex lg:hidden justify-between items-center px-4 py-2">
-                                        <div >
-                                            <button id="menu-toggle" class="relative w-8 h-8 focus:outline-none">
-                                                <div class="absolute top-1/2 left-1/2 w-6 h-[2px] bg-white transform -translate-x-1/2 -translate-y-2 transition duration-300" id="line1"></div>
-                                                <div class="absolute top-1/2 left-1/2 w-6 h-[2px] bg-white transform -translate-x-1/2 translate-y-0 transition duration-300" id="line2"></div>
-                                                <div class="absolute top-1/2 left-1/2 w-6 h-[2px] bg-white transform -translate-x-1/2 translate-y-2 transition duration-300" id="line3"></div>
-                                            </button>
-                                            <!-- Mobile Logo -->
-                                            <a href="/" class="ml-4">
-                                            <img src="https://www.zim.com/assets/g0mbdksc/zim80-logo-313x112-white.png?v=1dbd885c4363b20"
-                                            class="h-[40px] w-auto" alt="ZIM Mobile Logo">
-                                            </a>
-                                            <!-- Mobile Menu -->
-                                            <div id="mobile-menu" class="hidden flex-col space-y-2 mt-4 md:hidden bg-white text-[#002d72] rounded p-4">
-                                                <a href="#" class="block">ZIM Blog</a>
-                                                <a href="#" class="block">Contact Us</a>
-                                                <a href="#" class="block">Careers</a>
-                                                <a href="#" class="block">Investors</a>
-                                                <a href="#" class="block">Customer Updates</a>
-                                                <a href="#" class="block">Cargo Services</a>
-                                                <a href="#" class="block">Global Network</a>
-                                                <a href="#" class="block">Schedules</a>
-                                                <a href="#" class="block">Digital Solutions</a>
-                                                <a href="#" class="block">About ZIM</a>
-                                            </div>
-                                        </div>
-                                        <button class="px-3 py-1 bg-white text-blue-900 rounded-md font-bold text-sm flex items-center">
-                                                I Need
-                                                <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                                                    <path d="M5 8l5 5 5-5H5z" />
-                                                </svg>
-                                            </button>
+                                    <div class="flex lg:hidden justify-between items-center w-full">
+                                    <div class="flex items-center">
+                                        <button id="menu-toggle" class="relative w-8 h-8 focus:outline-none">
+                                        <div class="absolute top-1/2 left-1/2 w-6 h-[2px] bg-white transform -translate-x-1/2 -translate-y-2 transition duration-300"></div>
+                                        <div class="absolute top-1/2 left-1/2 w-6 h-[2px] bg-white transform -translate-x-1/2 translate-y-0 transition duration-300"></div>
+                                        <div class="absolute top-1/2 left-1/2 w-6 h-[2px] bg-white transform -translate-x-1/2 translate-y-2 transition duration-300"></div>
+                                        </button>
+                                        <a href="/" class="ml-4">
+                                        <img src="https://www.zim.com/assets/g0mbdksc/zim80-logo-313x112-white.png?v=1dbd885c4363b20" class="h-[40px] w-auto" alt="ZIM Mobile Logo" />
+                                        </a>
                                     </div>
-
+                                    <button class="px-3 py-1 bg-white text-blue-900 rounded-md font-bold text-sm flex items-center">
+                                        I Need
+                                        <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M5 8l5 5 5-5H5z" />
+                                        </svg>
+                                    </button>
+                                    </div>
+                                    <div id="mobile-menu" class="hidden absolute top-0 mt-[70px] space-y-2 mt-4 md:hidden bg-white text-[#002d72] rounded p-4 w-full">
+                                        <a href="#" class="block">ZIM Blog</a>
+                                        <a href="#" class="block">Contact Us</a>
+                                        <a href="#" class="block">Careers</a>
+                                        <a href="#" class="block">Investors</a>
+                                        <a href="#" class="block">Customer Updates</a>
+                                        <a href="#" class="block">Cargo Services</a>
+                                        <a href="#" class="block">Global Network</a>
+                                        <a href="#" class="block">Schedules</a>
+                                        <a href="#" class="block">Digital Solutions</a>
+                                        <a href="#" class="block">About ZIM</a>
+                                    </div>
                                     
-                                    <!-- desktop_logo -->
-                                    <div class="hidden md:block">
+                                    <!-- desktop_Nav -->
+                                    <div class="hidden md:flex items-center justify-between w-full">
+                                    <!-- Insert original desktop nav here -->
+                                     <div class="hidden md:block">
                                         <a href="/">
                                         <img src="https://www.zim.com/assets/f4ln4see/logo80-tablets-light-200x112.png?v=1dbd9195eeea6f0"
                                             class="h-[120px] w-[220px] mt-[60px]" alt="ZIM Logo">
                                         </a>
                                     </div>
-                                    <!--navbar_desktop-->
-                                    <div class="w-full h-full">
+                                    <div class="w-full h-full mt-[100px]">
                                         <div class="hidden md:flex justify-end border-b border-white/30 py-[10px] text-[18px] font-light relative gap-[30px] w-full "><!--navtop-->
                                             <a href="#" class="mx-2 hover:border-b-[5px] border-white">ZIM Blog</a>
                                             <a href="#" class="mx-2 hover:border-b-[5px] border-white">Contact Us</a>
@@ -130,33 +127,39 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+                                </div>
+                                    <!---->    
                                 </div>
                             </div>
-                        </div>
-                        
+                        </div> 
                     </div>
-                    <section class="sm:relative relative text-white bg-cover bg-center h-[740px]" style="background-image: url('https://www.zim.com/assets/dakfozjo/zim-sammy-ofer_panama_wlu_desktop.webp');">
-                        <div class=" py-16 px-4 text-left mt-[180px] ml-[50px]">
-                        <h1 class="text-5xl md:text-5xl font-light font-[Michroma] font-bold">Innovative Shipping <br /><br /> Dedicated to You</h1>
+                    <section class="title  sm:relative relative text-white  bg-center h-[740px] bg-[url('https://www.zim.com/assets/24fh2xzd/zim-sammy-ofer_panama_wlu_mobile.webp')] md:bg-[url('https://www.zim.com/assets/dakfozjo/zim-sammy-ofer_panama_wlu_desktop.webp')] bg-cover bg-center bg-no-repeat" >
+                        <div class="flex sm:flex-bottom">
+                        <div class=" py-16 px-4 sm:py-16 sm:mt-[180px] lg:text-left lg:mt-[180px] ml-[50px] sm:ml-[50px] sm:text-center sm:text-3xl lg:w-[60%]">
+                        <h1 class="hidden md:block md:text-5xl font-light font-[Michroma] font-bold">
+                            Innovative Shipping <br /><br /> Dedicated to You
+                        </h1>
+                        <h1 class="block md:hidden text-[32px] font-bold font-[Michroma] font-bold mt-[100px] text-center">
+                            Innovative Shipping <br /> Dedicated to You
+                        </h1>
                         <br>
-                        <button class=" mx-[60px] mt-[17px] text-[#002d72] bg-white rounded-[10px] px-0 py-[15px] w-[350px] h-[60px] flex justify-center items-center text-[22px] leading-[26px] font-normal font-[Assistant]">Request a Quote</button>
+                        <button class=" mx-auto sm:mx-[60px] mt-[17px] text-[#002d72] bg-white rounded-[10px] px-4 py-[15px] w-full sm:w-[350px] h-[60px] flex justify-center items-center text-[20px] sm:text-[22px] font-[Assistant]">Request a Quote</button>
                         </div>
 
-                        <!-- Tracking box -->
-                        <div class="absolute right-5 top-1/2 transform -translate-y-1/2 bg-white text-[#002f5f] p-6 rounded-lg shadow-lg w-[500px] font-[Assistant] ">
+                        <!-- Tracking box desktop-->
+                        <div class=" hidden md:block absolute lg:mt-[360px]  right-5 top-1/2 transform -translate-y-1/2 bg-white text-[#002f5f] p-6 rounded-lg shadow-lg w-[500px] font-[Assistant] sm:relative  ">
                             <div class="flex border-b border-[#d1d1d1] mb-4">
-                                <button class="tab-btn w-full py-3 text-[20px] font-bold text-blue-1000 border-b-4 border-blue-900 font-[Assistant, sans-serif]" onclick="showTab('tracking', this)">Tracking</button>
-                                <button class="tab-btn w-full py-3 text-[20px] font-bold text-blue-1000 border-b-4 border-transparent hover:border-b-4 border-blue-900" onclick="showTab('schedules', this)">Schedules</button>
-                                <button class="tab-btn w-full py-3 text-[20px] font-bold text-blue-1000 border-b-4 border-transparent hover:border-b-4 border-blue-900" onclick="showTab('offices', this)">Offices</button>
+                                <button class="tab-btn-mobile w-full py-3 text-[20px] font-bold text-blue-1000 border-b-4 border-blue-900 font-[Assistant, sans-serif]" onclick="showTab('tracking', this)">Tracking</button>
+                                <button class="tab-btn-mobile w-full py-3 text-[20px] font-bold text-blue-1000 border-b-4 border-transparent hover:border-b-4 border-blue-900" onclick="showTab('schedules', this)">Schedules</button>
+                                <button class="tab-btn-mobile w-full py-3 text-[20px] font-bold text-blue-1000 border-b-4 border-transparent hover:border-b-4 border-blue-900" onclick="showTab('offices', this)">Offices</button>
                             </div>
-                            <div class="tab-content space-y-3" id="tracking">
+                            <div class="tab-content-mobile space-y-3" id="tracking">
                                 <label class="block text-sm font-medium text-gray-700 text-left text-[18px]">Track by</label>
                                 <input type="text" placeholder="Container(s) / Booking(s) / B/L(s) Number"class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none h-[60px]"/>
                                 <p class="text-s text-[#424280] ">Trace multiple shipments by using your reference number(s)</p>
                                 <button class="w-full bg-blue-900 text-white py-2 rounded-md hover:bg-[#002d72] h-[60px]">Search</button>
                             </div>
-                            <div class="tab-content space-y-3 hidden" id="schedules">
+                            <div class="tab-content-mobile space-y-3 hidden" id="schedules">
                                 <select class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none text-gary-300">
                                     <option class="text-gary-300">Point To Point</option>
                                 </select>
@@ -164,7 +167,7 @@
                                 <input type="text" placeholder="Destination" class="w-full px-4 py-2 border border-gray-300 rounded-md"/>
                                 <button class="w-full bg-blue-900 text-white py-2 rounded-md hover:bg-[#002d72] h-[60px]">Search</button>
                             </div>
-                            <div class="tab-content space-y-3 hidden" id="offices">
+                            <div class="tab-content-mobile space-y-3 hidden" id="offices">
                                 <select class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none">
                                     <option>India</option>
                                     <option>USA</option>
@@ -178,6 +181,42 @@
                                 <button class="w-full bg-blue-900 text-white py-2 rounded-md hover:bg-[#002d72] h-[60px]">Search</button>
                             </div>
                         </div>
+                        <!-- Tracking box mobile-->
+                        <div class=" block md:hidden absolute top-0 mt-[150px]  right-5 top-1/2 transform -translate-y-1/2 bg-white text-[#002f5f] p-6 rounded-lg shadow-lg w-[90%] font-[Assistant]  h-[40%] ">
+                            <div class="flex border-b border-[#d1d1d1] ">
+                                <button class="tab-btn w-full py-3 text-[16px] font-bold text-blue-1000 border-b-4 border-blue-900 font-[Assistant, sans-serif]" onclick="showTab('tracking', this)">Tracking</button>
+                                <button class="tab-btn w-full py-3 text-[16px] font-bold text-blue-1000 border-b-4 border-transparent hover:border-b-4 border-blue-900" onclick="showTab('schedules', this)">Schedules</button>
+                                <button class="tab-btn w-full py-3 text-[16px] font-bold text-blue-1000 border-b-4 border-transparent hover:border-b-4 border-blue-900" onclick="showTab('offices', this)">Offices</button>
+                            </div>
+                            <div class="absolute tab-content space-y-3" id="tracking">
+                                <label class="block text-sm font-medium text-gray-700 text-left text-[18px]">Track by</label>
+                                <input type="text" placeholder="Container(s) / Booking(s) / B/L(s) Number"class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none h-[60px]"/>
+                                <p class="text-s text-[#424280] ">Trace multiple shipments by using your reference number(s)</p>
+                                <button class="w-full bg-blue-900 text-white py-2 rounded-md hover:bg-[#002d72] h-[30px]">Search</button>
+                            </div>
+                            <div class="tab-content space-y-3 hidden" id="schedules">
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none text-gary-300">
+                                    <option class="text-gary-300">Point To Point</option>
+                                </select>
+                                <input type="text" placeholder="Origin" class="w-full px-4 py-2 border border-gray-300 rounded-md"/>
+                                <input type="text" placeholder="Destination" class="w-full px-4 py-2 border border-gray-300 rounded-md"/>
+                                <button class="w-full bg-blue-900 text-white py-2 rounded-md hover:bg-[#002d72] h-[30px]">Search</button>
+                            </div>
+                            <div class="tab-content space-y-3 hidden" id="offices">
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none">
+                                    <option>India</option>
+                                    <option>USA</option>
+                                    <option>Germany</option>
+                                </select>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none">
+                                    <option>Branch</option>
+                                    <option>Mumbai</option>
+                                    <option>Delhi</option>
+                                </select>
+                                <button class="w-full bg-blue-900 text-white py-2 rounded-md hover:bg-[#002d72] h-[30px]">Search</button>
+                            </div>
+                        </div>
+                    </div>
                     </section>
                 </div>
                 <div class="sm:absolute absolute bg-white w-[90%] h-[70px]  rounded-[10px] flex items-center ml-[40px] shadow-[0_4px_8px_0_rgba(0,0,0,0.2),0_6px_20px_0_rgba(0,0,0,0.19)]  bottom-[-20px]">
@@ -195,7 +234,7 @@
         </header>
         <section class="mt-[100px]"><!--detail cards-->
              <div class="relative w-full overflow-hidden px-4 py-10">
-                <ul class="carousel grid grid-flow-col auto-cols-[calc(100%/3-12px)] gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide">
+                <ul class="carousel grid grid-flow-col auto-cols-[100%] sm:auto-cols-[calc(100%/2-12px)] md:auto-cols-[calc(100%/3-12px)] gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide">
                 <!-- Card 1 -->
                 <li class="card flex flex-col w-[390px] bg-gray-100 shadow-[0_3px_6px_rgba(0,0,0,0.23)] rounded-[15px] relative overflow-hidden cursor-pointer snap-start">
                     <div class="relative ">
@@ -263,8 +302,8 @@
                 </ul>
 
                 <!-- Arrow buttons -->
-                <i id="left" class="fas fa-angle-left absolute top-1/2 left-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-left-solid.svg"></i>
-                <i id="right" class="fas fa-angle-right absolute top-1/2 right-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-right-solid.svg"></i>
+                <i id="left" class="hidden md:flex fas fa-angle-left absolute top-1/2 left-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-left-solid.svg"></i>
+                <i id="right" class="hidden md:flex fas fa-angle-right absolute top-1/2 right-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-right-solid.svg"></i>
             </div>
         </section>
         <section class="mt-[50px]"><!--cargo cards-->
@@ -273,7 +312,7 @@
                 <div class="flex m-4"><a href="#" class="text-blue-900 text-[22px] inline-block font-[Assistant] mr-2 ">All Cargo Services </a><img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg?v=-7--KikKqszQjvI1TUX-as9z4UA" class="w-[20px] h-[px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
             </div>
              <div class="relative w-full overflow-hidden px-4 py-10">
-                <ul class="carousel1 ml-8 grid grid-flow-col auto-cols-[calc(100%/4-12px)] gap-3 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide">
+                <ul class="carousel1 ml-8 grid grid-flow-col auto-cols-[100%] sm:auto-cols-[calc(100%/2-12px)] md:auto-cols-[calc(100%/4-12px)] gap-3 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide">
                     <!-- Card 1 -->
                     <li class="card1 relative w-[270px] h-[500px] rounded-[10px] overflow-hidden cursor-pointer shadow-[0_3px_6px_rgba(0,0,0,0.23)] group">
                         <!-- Background Image -->
@@ -385,8 +424,8 @@
                 
 
                 <!-- Arrow buttons -->
-                <i id="left" class="fas fa-angle-left absolute top-1/2 left-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-left-solid.svg"></i>
-                <i id="right" class="fas fa-angle-right absolute top-1/2 right-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-right-solid.svg"></i>
+                <i id="left" class="hidden md:flex fas fa-angle-left absolute top-1/2 left-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-left-solid.svg"></i>
+                <i id="right" class="hidden md:flex fas fa-angle-right absolute top-1/2 right-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-right-solid.svg"></i>
             </div>
         </section>
                 

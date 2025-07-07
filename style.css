@@ -43,14 +43,7 @@ body{
         padding-right: 5px;
     }
 }
-/* @media screen and (min-width: 1200px) and (max-width: 1599px) {
-    .navbar_logo_desk {
-        display: flex;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        padding-right: 1rem;
-    }
-} */
+
 @media screen and (min-width: 992px) and (max-width: 1399px) {
     .navbar_core {
         gap: 1rem;
