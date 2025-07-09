@@ -1,33 +1,33 @@
 const img=document.getElementById("myimg");
-                img.addEventListener("click",
-                function()
-                {
-                    img.classList.toggle("rotated");
-                });
+  img.addEventListener("click",
+    function()
+    {
+      img.classList.toggle("rotated");
+    });
 const img2=document.getElementById("myimg2");
     img2.addEventListener("click",
-     function()
+      function()
      {
         img2.classList.toggle("rotated");
+     });
+const img3=document.getElementById("myimg3");
+    img3.addEventListener("click",
+      function()
+      {
+        img3.classList.toggle("rotated");
       });
-            const img3=document.getElementById("myimg3");
-                img3.addEventListener("click",
-                    function()
-                    {
-                        img3.classList.toggle("rotated");
-                    });
-            const img4=document.getElementById("myimg4");
-                img4.addEventListener("click",
-                    function()
-                    {
-                        img4.classList.toggle("rotated");
-                    });
-            const img5=document.getElementById("myimg5");
-                img5.addEventListener("click",
-                    function()
-                    {
-                        img5.classList.toggle("rotated");
-                    });
+const img4=document.getElementById("myimg4");
+  img4.addEventListener("click",
+    function()
+    {
+      img4.classList.toggle("rotated");
+    });
+const img5=document.getElementById("myimg5");
+  img5.addEventListener("click",
+    function()
+    {
+      img5.classList.toggle("rotated");
+    });
 const img6=document.getElementById("myimg6");
   img6.addEventListener("click",
   function()
@@ -52,12 +52,12 @@ const menuToggle = document.getElementById('menu-toggle');
       line3.classList.toggle('-translate-y-[0.25rem]');
     });
 
-    document.getElementById('media-button').addEventListener('click', function () {
+document.getElementById('media-button').addEventListener('click', function () {
       const dropdown = document.getElementById('media-dropdown');
       dropdown.classList.toggle('hidden');
     });
   // trackking form
-  function showTab(tabId1, clickedButton) {
+  function showTab(tabId, clickedButton) {
       document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
 
       document.querySelectorAll('.tab-btn').forEach(btn => {
@@ -68,19 +68,18 @@ const menuToggle = document.getElementById('menu-toggle');
       clickedButton.classList.add('text-blue-900', 'border-blue-900');
       clickedButton.classList.remove('text-blue-900', 'border-transparent');
   }
+  function showTab1(tabId1, clickedButton1) {
+      document.querySelectorAll('.tab-content1').forEach(tab => tab.classList.add('hidden'));
 
-  function showTabMobile(tabId, clickedButton) {
-  document.querySelectorAll('.tab-content-mobile').forEach(tab => tab.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn1').forEach(btn => {
+        btn.classList.remove('text-blue-900', 'border-blue-900');
+        btn.classList.add('text-blue-900', 'border-transparent');
+      });
+      document.getElementById(tabId1).classList.remove('hidden');
+      clickedButton1.classList.add('text-blue-900', 'border-blue-900');
+      clickedButton1.classList.remove('text-blue-900', 'border-transparent');
+    }
 
-  document.querySelectorAll('.tab-btn-mobile').forEach(btn => {
-    btn.classList.remove('text-blue-900', 'border-blue-900');
-    btn.classList.add('text-blue-900', 'border-transparent');
-  });
-
-  document.getElementById(tabId).classList.remove('hidden');
-  clickedButton.classList.add('text-blue-900', 'border-blue-900');
-  clickedButton.classList.remove('border-transparent');
-}
 
 // newsticker
 const newsItems = [

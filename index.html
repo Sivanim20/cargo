@@ -15,7 +15,7 @@
                 <div class="relative overflow-hidden min-h-screen flex-col flex wrapper"><!--Wrapper-->
                     <div class="h-[149px] -left-0 top-0 absolute -right-0 z-[4000] "><!--navbarReact-->
                         <div><!--newui-->
-                            <div class="bg-gradient-to-b from-[#002d72] via-[#002d72] to-transparent h-[164px]"><!--Navbar_top-->
+                            <div class="bg-gradient-to-b from-[#002d72] via-[#002d72] to-transparent lg:h-[164px] sm:h[110px]"><!--Navbar_top-->
                                 <div class="navbar flex items-center justify-between h-[90px] text-white  bg-transparent max-w-[1920px] mx-auto px-4 sm:px-[30px] pr-[50px]"><!--navbar-->
                                     <!-- Mobile Nav -->
                                     <div class="flex lg:hidden justify-between items-center w-full">
@@ -70,7 +70,7 @@
                                                 <span>Media</span>
                                                 <img id="myimg6" class="w-[25px] h-[25px] transition-transform duration-500 ease-in-out ml-2" id="myimg" src="asset\downarrow_white.svg" alt="Tap to Rotate">
                                                 </button>
-                                                <div id="media-dropdown" class="absolute right-0 mt-2 hidden bg-white text-[#002d72] rounded shadow-md">
+                                                <div id="media-dropdown" class="absolute right-0 mt-2 hidden bg-white text-[#002d72] rounded shadow-md z-1">
                                                     <a href="#" class="block px-4 py-2 hover:bg-gray-100">Press Releases</a>
                                                     <a href="#" class="block px-4 py-2 hover:bg-gray-100">Gallery</a>
                                                     <a href="#" class="block px-4 py-2 hover:bg-gray-100">Events</a>
@@ -139,27 +139,27 @@
                         <h1 class="hidden md:block md:text-5xl font-light font-[Michroma] font-bold">
                             Innovative Shipping <br /><br /> Dedicated to You
                         </h1>
-                        <h1 class="block md:hidden text-[32px] font-bold font-[Michroma] font-bold mt-[100px] text-center">
+                        <h1 class="block md:hidden text-[32px] font-bold font-[Michroma] font-bold mt-[50px] text-center">
                             Innovative Shipping <br /> Dedicated to You
                         </h1>
                         <br>
-                        <button class=" mx-auto sm:mx-[60px] mt-[17px] text-[#002d72] bg-white rounded-[10px] px-4 py-[15px] w-full sm:w-[350px] h-[60px] flex justify-center items-center text-[20px] sm:text-[22px] font-[Assistant]">Request a Quote</button>
+                        <button class=" sm:mx-auto lg:mx-[60px] mt-[17px] text-[#002d72] bg-white rounded-[10px] px-4 py-[15px] w-full sm:w-full lg:w-[350px] lg:h-[60px] sm:h-[60px] flex justify-center items-center lg:text-[20px] sm:text-[20px] font-[Assistant]">Request a Quote</button>
                         </div>
 
                         <!-- Tracking box desktop-->
                         <div class=" hidden md:block absolute lg:mt-[360px]  right-5 top-1/2 transform -translate-y-1/2 bg-white text-[#002f5f] p-6 rounded-lg shadow-lg w-[500px] font-[Assistant] sm:relative  ">
                             <div class="flex border-b border-[#d1d1d1] mb-4">
-                                <button class="tab-btn-mobile w-full py-3 text-[20px] font-bold text-blue-1000 border-b-4 border-blue-900 font-[Assistant, sans-serif]" onclick="showTab('tracking', this)">Tracking</button>
-                                <button class="tab-btn-mobile w-full py-3 text-[20px] font-bold text-blue-1000 border-b-4 border-transparent hover:border-b-4 border-blue-900" onclick="showTab('schedules', this)">Schedules</button>
-                                <button class="tab-btn-mobile w-full py-3 text-[20px] font-bold text-blue-1000 border-b-4 border-transparent hover:border-b-4 border-blue-900" onclick="showTab('offices', this)">Offices</button>
+                                <button class="tab-btn w-full py-3 text-[20px] font-bold text-blue-1000 border-b-4 border-blue-900 font-[Assistant, sans-serif]" onclick="showTab('tracking', this)">Tracking</button>
+                                <button class="tab-btn w-full py-3 text-[20px] font-bold text-blue-1000 border-b-4 border-transparent hover:border-b-4 border-blue-900" onclick="showTab('schedules', this)">Schedules</button>
+                                <button class="tab-btn w-full py-3 text-[20px] font-bold text-blue-1000 border-b-4 border-transparent hover:border-b-4 border-blue-900" onclick="showTab('offices', this)">Offices</button>
                             </div>
-                            <div class="tab-content-mobile space-y-3" id="tracking">
+                            <div class="tab-content space-y-3" id="tracking">
                                 <label class="block text-sm font-medium text-gray-700 text-left text-[18px]">Track by</label>
                                 <input type="text" placeholder="Container(s) / Booking(s) / B/L(s) Number"class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none h-[60px]"/>
                                 <p class="text-s text-[#424280] ">Trace multiple shipments by using your reference number(s)</p>
                                 <button class="w-full bg-blue-900 text-white py-2 rounded-md hover:bg-[#002d72] h-[60px]">Search</button>
                             </div>
-                            <div class="tab-content-mobile space-y-3 hidden" id="schedules">
+                            <div class="tab-content space-y-3 hidden" id="schedules">
                                 <select class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none text-gary-300">
                                     <option class="text-gary-300">Point To Point</option>
                                 </select>
@@ -167,7 +167,7 @@
                                 <input type="text" placeholder="Destination" class="w-full px-4 py-2 border border-gray-300 rounded-md"/>
                                 <button class="w-full bg-blue-900 text-white py-2 rounded-md hover:bg-[#002d72] h-[60px]">Search</button>
                             </div>
-                            <div class="tab-content-mobile space-y-3 hidden" id="offices">
+                            <div class="tab-content space-y-3 hidden" id="offices">
                                 <select class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none">
                                     <option>India</option>
                                     <option>USA</option>
@@ -182,27 +182,27 @@
                             </div>
                         </div>
                         <!-- Tracking box mobile-->
-                        <div class=" block md:hidden absolute top-0 mt-[150px]  right-5 top-1/2 transform -translate-y-1/2 bg-white text-[#002f5f] p-6 rounded-lg shadow-lg w-[90%] font-[Assistant]  h-[40%] ">
+                        <div class=" block md:hidden absolute  mt-[23%]  right-5 top-1/2 transform -translate-y-1/2 bg-white text-[#002f5f] p-6 rounded-lg shadow-lg w-[90%] font-[Assistant]  h-[40%] justify-center">
                             <div class="flex border-b border-[#d1d1d1] ">
-                                <button class="tab-btn w-full py-3 text-[16px] font-bold text-blue-1000 border-b-4 border-blue-900 font-[Assistant, sans-serif]" onclick="showTab('tracking', this)">Tracking</button>
-                                <button class="tab-btn w-full py-3 text-[16px] font-bold text-blue-1000 border-b-4 border-transparent hover:border-b-4 border-blue-900" onclick="showTab('schedules', this)">Schedules</button>
-                                <button class="tab-btn w-full py-3 text-[16px] font-bold text-blue-1000 border-b-4 border-transparent hover:border-b-4 border-blue-900" onclick="showTab('offices', this)">Offices</button>
+                                <button class="tab-btn1 w-full py-3 text-[16px] font-bold text-blue-1000 border-b-4 border-blue-900 font-[Assistant, sans-serif]" onclick="showTab1('tracking1', this)">Tracking</button>
+                                <button class="tab-btn1 w-full py-3 text-[16px] font-bold text-blue-1000 border-b-4 border-transparent hover:border-b-4 border-blue-900" onclick="showTab1('schedules2', this)">Schedules</button>
+                                <button class="tab-btn1 w-full py-3 text-[16px] font-bold text-blue-1000 border-b-4 border-transparent hover:border-b-4 border-blue-900" onclick="showTab1('offices3', this)">Offices</button>
                             </div>
-                            <div class="absolute tab-content space-y-3" id="tracking">
-                                <label class="block text-sm font-medium text-gray-700 text-left text-[18px]">Track by</label>
+                            <div class=" tab-content1 space-y-3" id="tracking1">
+                                <label class="block text-sm font-medium text-gray-700 text-left text-[16px]">Track by</label>
                                 <input type="text" placeholder="Container(s) / Booking(s) / B/L(s) Number"class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none h-[60px]"/>
                                 <p class="text-s text-[#424280] ">Trace multiple shipments by using your reference number(s)</p>
-                                <button class="w-full bg-blue-900 text-white py-2 rounded-md hover:bg-[#002d72] h-[30px]">Search</button>
+                                <button class="w-full bg-blue-900 text-white py-2 rounded-md hover:bg-[#002d72] h-[40px] justify-center">Search</button>
                             </div>
-                            <div class="tab-content space-y-3 hidden" id="schedules">
+                            <div class="tab-content1 space-y-3 hidden" id="schedules2">
                                 <select class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none text-gary-300">
                                     <option class="text-gary-300">Point To Point</option>
                                 </select>
                                 <input type="text" placeholder="Origin" class="w-full px-4 py-2 border border-gray-300 rounded-md"/>
                                 <input type="text" placeholder="Destination" class="w-full px-4 py-2 border border-gray-300 rounded-md"/>
-                                <button class="w-full bg-blue-900 text-white py-2 rounded-md hover:bg-[#002d72] h-[30px]">Search</button>
+                                <button class="w-full bg-blue-900 text-white py-2 rounded-md hover:bg-[#002d72] h-[40px]">Search</button>
                             </div>
-                            <div class="tab-content space-y-3 hidden" id="offices">
+                            <div class="tab-content1 space-y-3 hidden" id="offices3">
                                 <select class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none">
                                     <option>India</option>
                                     <option>USA</option>
@@ -213,7 +213,7 @@
                                     <option>Mumbai</option>
                                     <option>Delhi</option>
                                 </select>
-                                <button class="w-full bg-blue-900 text-white py-2 rounded-md hover:bg-[#002d72] h-[30px]">Search</button>
+                                <button class="w-full bg-blue-900 text-white py-2 rounded-md hover:bg-[#002d72] h-[40px]">Search</button>
                             </div>
                         </div>
                     </div>
@@ -223,7 +223,7 @@
                     <div class=" flex bg-transparent items-center gap-4 overflow-hidden w-full ">
                         <div class="news-ticker w-full ">
                             <div id="news-box" class="news-box transition-transform duration-500 ease-in-out will-change-transform w-full">
-                                <div class="news-item text-black w-auto text-[20px]" id="news-content">
+                                <div class="news-item text-black w-auto lg:text-[20px] sm:text-[16px]" id="news-content">
                                     <span class="text-[#1949b8] font-bold mr-2 ml-2">11 JUN 2025</span><a href="#"> | NBF (New Bunker Factor*) update </a>
                                 </div>
                             </div>
@@ -232,262 +232,286 @@
                 </div>
             </div>
         </header>
-        <section class="mt-[100px] mb-[10px]"><!--detail cards-->
-             <div class="relative w-full overflow-hidden px-4 ">
-                <ul class="carousel grid grid-flow-col auto-cols-[100%] sm:auto-cols-[calc(100%/2-12px)] md:auto-cols-[calc(100%/3-12px)] gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide">
-                <!-- Card 1 -->
-                <li class="card flex flex-col w-[390px] bg-gray-100 shadow-[0_3px_6px_rgba(0,0,0,0.23)] rounded-[15px] relative overflow-hidden cursor-pointer snap-start">
-                    <div class="relative ">
-                        <div class="overflow-hidden h-[300px] rounded-t-[15px] ">
-                            <img src="asset/card1.png" alt="Card 1" class="w-full h-full object-cover transition-transform duration-500 transform hover:scale-110"/>
-                        </div>
-                        <h3 class="font-bold text-lg font-[Michroma] text-blue-800 text-[30px] m-4">Explore ZIM’s company culture and job opportunities.</h3>
-                        <div class="flex m-4"><a href="#" class="text-blue-900 text-[20px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg?v=-7--KikKqszQjvI1TUX-as9z4UA" class="w-[20px] h-[px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+        <section class="mt-[80px] mb-[10px]"><!--detail cards-->
+            <div class="relative w-full overflow-hidden px-2 sm:px-4">
+                <ul class="carousel grid grid-flow-col auto-cols-[65%] sm:auto-cols-[calc(100%/2-12px)] md:auto-cols-[calc(100%/3-12px)] gap-3 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide">
+                
+                <!-- Card1-->
+                <li class="card flex flex-col w-[270px] sm:w-[390px] bg-gray-100 shadow-[0_3px_6px_rgba(0,0,0,0.23)] rounded-[15px] relative overflow-hidden cursor-pointer snap-start">
+                    <div class="relative">
+                    <div class="overflow-hidden h-[180px] sm:h-[300px] rounded-t-[15px]">
+                        <img src="asset/card1.png" alt="Card 1" class="w-full h-full object-cover transition-transform duration-500 transform hover:scale-110"/>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-lg font-[Michroma] text-blue-800 sm:text-[30px] text-[18px] m-2 sm:m-4 leading-tight">Explore ZIM’s company culture and job opportunities.</h3>
+                    <div class="flex items-center m-2 sm:m-4">
+                        <a href="#" class="text-blue-900 text-sm sm:text-[20px] font-[Assistant] mr-2 hover:underline">Read More</a>
+                        <img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg" class="w-4 h-4 sm:w-[20px] sm:h-[20px] transition-transform duration-1000 ease-in-out hover:translate-x-2">
+                    </div>
                     </div>
                 </li>
-
-                <!-- Card 2 -->
-                <li class="card flex flex-col w-[390px] bg-gray-100 shadow-[0_3px_6px_rgba(0,0,0,0.23)] rounded-[15px] relative overflow-hidden cursor-pointer snap-start">
-                    <div class="relative ">
-                        <div class="overflow-hidden h-[300px] rounded-t-[15px] ">
-                            <img src="asset/card2.png" alt="Card 2" class="w-full h-full object-cover transition-transform duration-500 transform hover:scale-110"/>
-                        </div>
-                        <h3 class="font-bold text-lg font-[Michroma] text-blue-800 text-[30px] m-4">Quotes and bookings are now available with a single sign-in!</h3>
-                        <div class="flex m-4"><a href="#" class="text-blue-900 text-[20px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg?v=-7--KikKqszQjvI1TUX-as9z4UA" class="w-[20px] h-[px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+                <!--card2-->
+                <li class="card flex flex-col w-[270px] sm:w-[390px] bg-gray-100 shadow-[0_3px_6px_rgba(0,0,0,0.23)] rounded-[15px] relative overflow-hidden cursor-pointer snap-start">
+                    <div class="relative">
+                    <div class="overflow-hidden h-[180px] sm:h-[300px] rounded-t-[15px]">
+                        <img src="asset/card2.png" alt="Card 2" class="w-full h-full object-cover transition-transform duration-500 transform hover:scale-110"/>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-lg font-[Michroma] text-blue-800 sm:text-[30px] text-[18px] m-2 sm:m-4 leading-tight">Quotes and bookings are now available with a single sign-in!</h3>
+                    <div class="flex items-center m-2 sm:m-4">
+                        <a href="#" class="text-blue-900 text-sm sm:text-[20px] font-[Assistant] mr-2 hover:underline">Read More</a>
+                        <img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg" class="w-4 h-4 sm:w-[20px] sm:h-[20px] transition-transform duration-1000 ease-in-out hover:translate-x-2">
+                    </div>
                     </div>
                 </li>
-
-                <!-- Card 3 -->
-                <li class="card flex flex-col w-[390px] bg-gray-100 shadow-[0_3px_6px_rgba(0,0,0,0.23)] rounded-[15px] relative overflow-hidden cursor-pointer snap-start">
-                    <div class="relative ">
-                        <div class="overflow-hidden h-[300px] rounded-t-[15px] ">
-                            <img src="asset/card3.png" alt="Card 3" class="w-full h-full object-cover transition-transform duration-500 transform hover:scale-110"/>
-                        </div>
-                        <h3 class="font-bold text-lg font-[Michroma] text-blue-800 text-[30px] m-4">Access your shipment details immediately after vessel departure.</h3>
-                        <div class="flex m-4"><a href="#" class="text-blue-900 text-[20px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg?v=-7--KikKqszQjvI1TUX-as9z4UA" class="w-[20px] h-[px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+                <!--card3-->
+                <li class="card flex flex-col w-[270px] sm:w-[390px] bg-gray-100 shadow-[0_3px_6px_rgba(0,0,0,0.23)] rounded-[15px] relative overflow-hidden cursor-pointer snap-start">
+                    <div class="relative">
+                    <div class="overflow-hidden h-[180px] sm:h-[300px] rounded-t-[15px]">
+                        <img src="asset/card3.png" alt="Card 3" class="w-full h-full object-cover transition-transform duration-500 transform hover:scale-110"/>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-lg font-[Michroma] text-blue-800 sm:text-[30px] text-[18px] m-2 sm:m-4 leading-tight">Access your shipment details immediately after vessel departure.</h3>
+                    <div class="flex items-center m-2 sm:m-4">
+                        <a href="#" class="text-blue-900 text-sm sm:text-[20px] font-[Assistant] mr-2 hover:underline">Read More</a>
+                        <img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg" class="w-4 h-4 sm:w-[20px] sm:h-[20px] transition-transform duration-1000 ease-in-out hover:translate-x-2">
+                    </div>
                     </div>
                 </li>
-
-                <!-- Card 4 -->
-                <li class="card flex flex-col w-[390px] bg-gray-100 shadow-[0_3px_6px_rgba(0,0,0,0.23)] rounded-[15px] relative overflow-hidden cursor-pointer snap-start">
-                    <div class="relative ">
-                        <div class="overflow-hidden h-[300px] rounded-t-[15px] ">
-                            <img src="asset/card4.png" alt="Card 4" class="w-full h-full object-cover transition-transform duration-500 transform hover:scale-110"/>
-                        </div>
-                        <h3 class="font-bold text-lg font-[Michroma] text-blue-800 text-[30px] m-4">New air service to / from Israel<br/>>Contact us today!</h3>
-                        <div class="flex m-4"><a href="#" class="text-blue-900 text-[20px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg?v=-7--KikKqszQjvI1TUX-as9z4UA" class="w-[20px] h-[px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+                <!--card4-->
+                <li class="card flex flex-col w-[270px] sm:w-[390px] bg-gray-100 shadow-[0_3px_6px_rgba(0,0,0,0.23)] rounded-[15px] relative overflow-hidden cursor-pointer snap-start">
+                    <div class="relative">
+                    <div class="overflow-hidden h-[180px] sm:h-[300px] rounded-t-[15px]">
+                        <img src="asset/card4.png" alt="Card 4" class="w-full h-full object-cover transition-transform duration-500 transform hover:scale-110"/>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-lg font-[Michroma] text-blue-800 sm:text-[30px] text-[18px] m-2 sm:m-4 leading-tight">New air service to / from Israel<br />Contact us today!</h3>
+                    <div class="flex items-center m-2 sm:m-4">
+                        <a href="#" class="text-blue-900 text-sm sm:text-[20px] font-[Assistant] mr-2 hover:underline">Read More</a>
+                        <img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg" class="w-4 h-4 sm:w-[20px] sm:h-[20px] transition-transform duration-1000 ease-in-out hover:translate-x-2">
+                    </div>
                     </div>
                 </li>
-
-                <!-- Card 5 -->
-                <li class="card flex flex-col w-[390px] bg-gray-100 shadow-[0_3px_6px_rgba(0,0,0,0.23)] rounded-[15px] relative overflow-hidden cursor-pointer snap-start">
-                    <div class="relative ">
-                        <div class="overflow-hidden h-[300px] rounded-t-[15px] ">
-                            <img src="asset/card5.png" alt="Card 5" class="w-full h-full object-cover transition-transform duration-500 transform hover:scale-110"/>
-                        </div>
-                        <h3 class="font-bold text-lg font-[Michroma] text-blue-800 text-[30px] m-4">Explore our Reefer Cargo solutions!</h3>
-                        <div class="flex m-4"><a href="#" class="text-blue-900 text-[20px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg?v=-7--KikKqszQjvI1TUX-as9z4UA" class="w-[20px] h-[px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+                <!--card5-->
+                <li class="card flex flex-col w-[270px] sm:w-[390px] bg-gray-100 shadow-[0_3px_6px_rgba(0,0,0,0.23)] rounded-[15px] relative overflow-hidden cursor-pointer snap-start">
+                    <div class="relative">
+                    <div class="overflow-hidden h-[180px] sm:h-[300px] rounded-t-[15px]">
+                        <img src="asset/card5.png" alt="Card 5" class="w-full h-full object-cover transition-transform duration-500 transform hover:scale-110"/>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-lg font-[Michroma] text-blue-800 sm:text-[30px] text-[18px] m-2 sm:m-4 leading-tight">Explore our Reefer Cargo solutions!</h3>
+                    <div class="flex items-center m-2 sm:m-4">
+                        <a href="#" class="text-blue-900 text-sm sm:text-[20px] font-[Assistant] mr-2 hover:underline">Read More</a>
+                        <img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg" class="w-4 h-4 sm:w-[20px] sm:h-[20px] transition-transform duration-1000 ease-in-out hover:translate-x-2">
+                    </div>
                     </div>
                 </li>
-                <!-- Card 6 -->
-                <li class="card flex flex-col w-[390px] bg-gray-100 shadow-[0_3px_6px_rgba(0,0,0,0.23)] rounded-[15px] relative overflow-hidden cursor-pointer snap-start">
-                    <div class="relative ">
-                        <div class="overflow-hidden h-[300px] rounded-t-[15px] ">
-                            <img src="asset/card6.png" alt="Card 6" class="w-full h-full object-cover transition-transform duration-500 transform hover:scale-110"/>
-                        </div>
-                        <h3 class="font-bold text-lg font-[Michroma] text-blue-800 text-[30px] m-4">Digital Draft B/L in 5 Steps: No registration needed!</h3>
-                        <div class="flex m-4 " href="#"><a href="#" class="text-blue-900 text-[20px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg?v=-7--KikKqszQjvI1TUX-as9z4UA" class="w-[20px] h-[px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+                <!--card6-->
+                <li class="card flex flex-col w-[270px] sm:w-[390px] bg-gray-100 shadow-[0_3px_6px_rgba(0,0,0,0.23)] rounded-[15px] relative overflow-hidden cursor-pointer snap-start">
+                    <div class="relative">
+                    <div class="overflow-hidden h-[180px] sm:h-[300px] rounded-t-[15px]">
+                        <img src="asset/card6.png" alt="Card 6" class="w-full h-full object-cover transition-transform duration-500 transform hover:scale-110"/>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-lg font-[Michroma] text-blue-800 sm:text-[30px] text-[18px] m-2 sm:m-4 leading-tight">Digital Draft B/L in 5 Steps: No registration needed!</h3>
+                    <div class="flex items-center m-2 sm:m-4">
+                        <a href="#" class="text-blue-900 text-sm sm:text-[20px] font-[Assistant] mr-2 hover:underline">Read More</a>
+                        <img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg" class="w-4 h-4 sm:w-[20px] sm:h-[20px] transition-transform duration-1000 ease-in-out hover:translate-x-2">
+                    </div>
                     </div>
                 </li>
                 </ul>
-
-                <!-- Arrow buttons -->
-                <i id="left" class="hidden md:flex fas fa-angle-left absolute top-1/2 left-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-left-solid.svg"></i>
-                <i id="right" class="hidden md:flex fas fa-angle-right absolute top-1/2 right-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-right-solid.svg"></i>
+                <!-- Arrow buttons (shown only on md and above) -->
+                <i id="left" class="hidden md:flex fas fa-angle-left absolute top-1/2 left-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2">
+                <img src="https://www.zim.com/static/images/chevron-left-solid.svg">
+                </i>
+                <i id="right" class="hidden md:flex fas fa-angle-right absolute top-1/2 right-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2">
+                <img src="https://www.zim.com/static/images/chevron-right-solid.svg">
+                </i>
             </div>
         </section>
+
         <section class="mt-[10px]"><!--cargo cards-->
-            <div class="flex relative">
-                <div class="flex w-[80%] h-[70px] font-[Michroma] text-blue-900 text-[50px] ml-4">Cargo Services</div>
-                <div class="flex m-4"><a href="#" class="text-blue-900 text-[22px] inline-block font-[Assistant] mr-2 ">All Cargo Services </a><img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg?v=-7--KikKqszQjvI1TUX-as9z4UA" class="w-[20px] h-[px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center px-4">
+                <div class="font-[Michroma] text-blue-900 text-[28px] sm:text-[40px] md:text-[50px]">Cargo Services</div>
+                <div class="flex mt-2 sm:mt-0 items-center">
+                    <a href="#" class="text-blue-900 text-[18px] sm:text-[20px] md:text-[22px] inline-block font-[Assistant] mr-2">All Cargo Services</a>
+                    <img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg?v=-7--KikKqszQjvI1TUX-as9z4UA" class="w-[20px] h-[20px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2">
+                </div>
             </div>
              <div class="relative w-full overflow-hidden px-4 py-10">
-                <ul class="carousel1 ml-8 grid grid-flow-col auto-cols-[100%] sm:auto-cols-[calc(100%/2-12px)] md:auto-cols-[calc(100%/4-12px)] gap-3 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide">
+                <ul class="carousel1 ml-8 grid grid-flow-col auto-cols-[calc[100%/2-14px]] sm:auto-cols-[calc(100%/2-12px)] md:auto-cols-[calc(100%/4-12px)] gap-3 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide">
                     <!-- Card 1 -->
-                    <li class="card1 relative w-[270px] h-[500px] rounded-[10px] overflow-hidden cursor-pointer shadow-[0_3px_6px_rgba(0,0,0,0.23)] group">
-                        <!-- Background Image -->
+                    <li class="card1 relative w-[200px] sm:w-[230px] md:w-[270px] h-[400px] sm:h-[450px] md:h-[500px] rounded-[10px] overflow-hidden cursor-pointer shadow-[0_3px_6px_rgba(0,0,0,0.23)] group">
                         <img src="https://www.zim.com/assets/jxvfv0ue/img_1149_dry_cargo.webp" alt="Dry Cargo" class="w-full h-full object-cover" />
-
-                        <!-- Always visible title -->
-                        <div class="absolute h-[50%]  bottom-0 left-0 w-full bg-gradient-to-t from-[#041d40] to-transparent text-white p-4 z-10 transition-opacity duration-500 group-hover:opacity-0">
-                            <h3 class="text-[20px] font-bold font-[Michroma] mt-[65%] text-[25px]">Dry Cargo</h3>
+                        <div class="absolute h-[50%] bottom-0 left-0 w-full bg-gradient-to-t from-[#041d40] to-transparent text-white p-4 z-10 transition-opacity duration-500 group-hover:opacity-0">
+                            <h3 class="text-[18px] sm:text-[20px] md:text-[25px] font-bold font-[Michroma] mt-[65%]">Dry Cargo</h3>
                         </div>
-
-                        <!-- Hover Content -->
                         <div class="absolute inset-0 bg-[#041d40]/65 text-white p-4 flex flex-col justify-end transform translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out z-20">
                             <div class="mt-auto">
-                            <h3 class="text-[24px] font-bold mb-2 font-[Michroma] mb-12">Dry Cargo</h3>
-                            <p class="text-[20px] mb-2 font-[Assistant] mt-4">
-                                Whether you're shipping ceramic kittens or football jerseys, toilet paper or big-screen TVs, our containers are ready.
-                            </p>
-                            <div class="flex m-5 " href="#"><a href="#" class="text-white text-[17px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/static/images/arrow-right-solid-white.svg" class="mt-[5px] w-[20px] h-[20px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+                                <h3 class="text-[20px] sm:text-[22px] md:text-[24px] font-bold mb-2 font-[Michroma] mb-12">Dry Cargo</h3>
+                                <p class="text-[16px] sm:text-[18px] md:text-[20px] mb-2 font-[Assistant] mt-4">
+                                    Whether you're shipping ceramic kittens or football jerseys, toilet paper or big-screen TVs, our containers are ready.
+                                </p>
+                                <div class="flex m-5" href="#">
+                                    <a href="#" class="text-white text-[15px] sm:text-[16px] inline-block font-[Assistant] mr-2 hover:underline">Read More</a>
+                                    <img src="https://www.zim.com/static/images/arrow-right-solid-white.svg" class="mt-[5px] w-[18px] sm:w-[20px] h-[18px] sm:h-[20px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2">
+                                </div>
                             </div>
                         </div>
                     </li>
-
                     <!-- Card 2 -->
-                    <li class="card1 relative w-[270px] h-[500px] rounded-[10px] overflow-hidden cursor-pointer shadow-[0_3px_6px_rgba(0,0,0,0.23)] group">
-                        <!-- Background Image -->
-                        <img src="https://www.zim.com/assets/1mydfag2/italy-zimonitor.webp" alt="Dry Cargo" class="w-full h-full object-cover" />
-
-                        <!-- Always visible title -->
-                        <div class="absolute h-[50%]  bottom-0 left-0 w-full bg-gradient-to-t from-[#041d40] to-transparent text-white p-4 z-10 transition-opacity duration-500 group-hover:opacity-0">
-                            <h3 class="text-[20px] font-bold font-[Michroma] mt-[65%] text-[25px]">Reefer Cargo</h3>
+                    <li class="card1 relative w-[200px] sm:w-[230px] md:w-[270px] h-[400px] sm:h-[450px] md:h-[500px] rounded-[10px] overflow-hidden cursor-pointer shadow-[0_3px_6px_rgba(0,0,0,0.23)] group">
+                        <img src="https://www.zim.com/assets/1mydfag2/italy-zimonitor.webp" alt="Reefer Cargo" class="w-full h-full object-cover" />
+                        <div class="absolute h-[50%] bottom-0 left-0 w-full bg-gradient-to-t from-[#041d40] to-transparent text-white p-4 z-10 transition-opacity duration-500 group-hover:opacity-0">
+                            <h3 class="text-[18px] sm:text-[20px] md:text-[25px] font-bold font-[Michroma] mt-[65%]">Reefer Cargo</h3>
                         </div>
-
-                        <!-- Hover Content  -->
                         <div class="absolute inset-0 bg-[#041d40]/65 text-white p-4 flex flex-col justify-end transform translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out z-20">
                             <div class="mt-auto">
-                            <h3 class="text-[24px] font-bold mb-2 font-[Michroma] mb-12">Reefer Cargo</h3>
-                            <p class="text-[20px] mb-2 font-[Assistant] mt-4">
-                                From fruit, meat, medicines, or sensitive cargo, ZIM's refrigerated containers are equipped to provide advanced transport you can rely on.
-                            </p>
-                            <div class="flex m-5 " href="#"><a href="#" class="text-white text-[17px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/static/images/arrow-right-solid-white.svg" class="mt-[5px] w-[20px] h-[20px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+                                <h3 class="text-[20px] sm:text-[22px] md:text-[24px] font-bold mb-2 font-[Michroma] mb-12">Reefer Cargo</h3>
+                                <p class="text-[16px] sm:text-[18px] md:text-[20px] mb-2 font-[Assistant] mt-4">
+                                    From fruit, meat, medicines, or sensitive cargo, ZIM's refrigerated containers are equipped to provide advanced transport you can rely on.
+                                </p>
+                                <div class="flex m-5" href="#">
+                                    <a href="#" class="text-white text-[15px] sm:text-[16px] inline-block font-[Assistant] mr-2 hover:underline">Read More</a>
+                                    <img src="https://www.zim.com/static/images/arrow-right-solid-white.svg" class="mt-[5px] w-[18px] sm:w-[20px] h-[18px] sm:h-[20px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2">
+                                </div>
                             </div>
                         </div>
                     </li>
-                
                     <!-- Card 3 -->
-                     <li class="card1 relative w-[270px] h-[500px] rounded-[10px] overflow-hidden cursor-pointer shadow-[0_3px_6px_rgba(0,0,0,0.23)] group">
-                        <!-- Background Image -->
-                        <img src="https://www.zim.com/assets/3gon4bmw/img_1969_project_cargo.webp" alt="Dry Cargo" class="w-full h-full object-cover" />
-
-                        <!-- Always visible title -->
-                        <div class="absolute h-[50%]  bottom-0 left-0 w-full bg-gradient-to-t from-[#041d40] to-transparent text-white p-4 z-10 transition-opacity duration-500 group-hover:opacity-0">
-                            <h3 class="text-[20px] font-bold font-[Michroma] mt-[65%] text-[25px]">Special Cargo</h3>
+                    <li class="card1 relative w-[200px] sm:w-[230px] md:w-[270px] h-[400px] sm:h-[450px] md:h-[500px] rounded-[10px] overflow-hidden cursor-pointer shadow-[0_3px_6px_rgba(0,0,0,0.23)] group">
+                        <img src="https://www.zim.com/assets/3gon4bmw/img_1969_project_cargo.webp" alt="Special Cargo" class="w-full h-full object-cover" />
+                        <div class="absolute h-[50%] bottom-0 left-0 w-full bg-gradient-to-t from-[#041d40] to-transparent text-white p-4 z-10 transition-opacity duration-500 group-hover:opacity-0">
+                            <h3 class="text-[18px] sm:text-[20px] md:text-[25px] font-bold font-[Michroma] mt-[65%]">Special Cargo</h3>
                         </div>
-
-                        <!-- Hover Content -->
                         <div class="absolute inset-0 bg-[#041d40]/65 text-white p-4 flex flex-col justify-end transform translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out z-20">
                             <div class="mt-auto">
-                            <h3 class="text-[24px] font-bold mb-2 font-[Michroma] mb-12">Special Cargo</h3>
-                            <p class="text-[20px] mb-2 font-[Assistant] mt-4">
-                               Equipped with flats, open tops, tankers, and monitoring equipment, we are prepared to handle a diverse range of non-standard shipments.
-                            </p>
-                            <div class="flex m-5 " href="#"><a href="#" class="text-white text-[17px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/static/images/arrow-right-solid-white.svg" class="mt-[5px] w-[20px] h-[20px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+                                <h3 class="text-[20px] sm:text-[22px] md:text-[24px] font-bold mb-2 font-[Michroma] mb-12">Special Cargo</h3>
+                                <p class="text-[16px] sm:text-[18px] md:text-[20px] mb-2 font-[Assistant] mt-4">
+                                    Equipped with flats, open tops, tankers, and monitoring equipment, we are prepared to handle a diverse range of non-standard shipments.
+                                </p>
+                                <div class="flex m-5" href="#">
+                                    <a href="#" class="text-white text-[15px] sm:text-[16px] inline-block font-[Assistant] mr-2 hover:underline">Read More</a>
+                                    <img src="https://www.zim.com/static/images/arrow-right-solid-white.svg" class="mt-[5px] w-[18px] sm:w-[20px] h-[18px] sm:h-[20px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2">
+                                </div>
                             </div>
                         </div>
                     </li>
                 
                     <!-- Card 4 -->
-                    <li class="card1 relative w-[270px] h-[500px] rounded-[10px] overflow-hidden cursor-pointer shadow-[0_3px_6px_rgba(0,0,0,0.23)] group">
-                        <!-- Background Image -->
-                        <img src="https://www.zim.com/assets/psipqe4k/new-zealand-bac1895_inland_transport.webp" alt="Dry Cargo" class="w-full h-full object-cover" />
-
-                        <!-- Always visible title -->
-                        <div class="absolute h-[50%]  bottom-0 left-0 w-full bg-gradient-to-t from-[#041d40] to-transparent text-white p-4 z-10 transition-opacity duration-500 group-hover:opacity-0">
-                            <h3 class="text-[20px] font-bold font-[Michroma] mt-[65%] text-[25px]">Inland Transport</h3>
+                    <li class="card1 relative w-[200px] sm:w-[230px] md:w-[270px] h-[400px] sm:h-[450px] md:h-[500px] rounded-[10px] overflow-hidden cursor-pointer shadow-[0_3px_6px_rgba(0,0,0,0.23)] group">
+                        <img src="https://www.zim.com/assets/psipqe4k/new-zealand-bac1895_inland_transport.webp" alt="Inland Transport" class="w-full h-full object-cover" />
+                        <div class="absolute h-[50%] bottom-0 left-0 w-full bg-gradient-to-t from-[#041d40] to-transparent text-white p-4 z-10 transition-opacity duration-500 group-hover:opacity-0">
+                            <h3 class="text-[18px] sm:text-[20px] md:text-[25px] font-bold font-[Michroma] mt-[65%]">Inland Transport</h3>
                         </div>
-
-                        <!-- Hover Content  -->
                         <div class="absolute inset-0 bg-[#041d40]/65 text-white p-4 flex flex-col justify-end transform translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out z-20">
                             <div class="mt-auto">
-                            <h3 class="text-[24px] font-bold mb-2 font-[Michroma] mb-12">Inland Transport</h3>
-                            <p class="text-[20px] mb-2 font-[Assistant] mt-4">
-                               By truck, rail, or barge, we’re your one point of contact for extensive land transport and door-to-door services.
-                            </p>
-                            <div class="flex m-5 " href="#"><a href="#" class="text-white text-[17px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/static/images/arrow-right-solid-white.svg" class="mt-[5px] w-[20px] h-[20px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+                                <h3 class="text-[20px] sm:text-[22px] md:text-[24px] font-bold mb-2 font-[Michroma] mb-12">Inland Transport</h3>
+                                <p class="text-[16px] sm:text-[18px] md:text-[20px] mb-2 font-[Assistant] mt-4">
+                                     By truck, rail, or barge, we’re your one point of contact for extensive land transport and door-to-door services.
+                                </p>
+                                <div class="flex m-5" href="#">
+                                    <a href="#" class="text-white text-[15px] sm:text-[16px] inline-block font-[Assistant] mr-2 hover:underline">Read More</a>
+                                    <img src="https://www.zim.com/static/images/arrow-right-solid-white.svg" class="mt-[5px] w-[18px] sm:w-[20px] h-[18px] sm:h-[20px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2">
+                                </div>
                             </div>
                         </div>
                     </li>
+                    
 
                     <!-- Card 5 -->
-                    <li class="card1 relative w-[270px] h-[500px] rounded-[10px] overflow-hidden cursor-pointer shadow-[0_3px_6px_rgba(0,0,0,0.23)] group">
-                        <!-- Background Image -->
-                        <img src="https://www.zim.com/assets/u2nluxat/zimonitor-stacking-600x600.webp" alt="Dry Cargo" class="w-full h-full object-cover" />
-
-                        <!-- Always visible title -->
-                        <div class="absolute h-[50%]  bottom-0 left-0 w-full bg-gradient-to-t from-[#041d40] to-transparent text-white p-4 z-10 transition-opacity duration-500 group-hover:opacity-0">
-                            <h3 class="text-[20px] font-bold font-[Michroma] mt-[65%] text-[25px]">ZIMonitor</h3>
+                     <li class="card1 relative w-[200px] sm:w-[230px] md:w-[270px] h-[400px] sm:h-[450px] md:h-[500px] rounded-[10px] overflow-hidden cursor-pointer shadow-[0_3px_6px_rgba(0,0,0,0.23)] group">
+                        <img src="https://www.zim.com/assets/u2nluxat/zimonitor-stacking-600x600.webp" alt="ZIMonitor" class="w-full h-full object-cover" />
+                        <div class="absolute h-[50%] bottom-0 left-0 w-full bg-gradient-to-t from-[#041d40] to-transparent text-white p-4 z-10 transition-opacity duration-500 group-hover:opacity-0">
+                            <h3 class="text-[18px] sm:text-[20px] md:text-[25px] font-bold font-[Michroma] mt-[65%]">ZIMonitor</h3>
                         </div>
-
-                        <!-- Hover Content -->
                         <div class="absolute inset-0 bg-[#041d40]/65 text-white p-4 flex flex-col justify-end transform translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out z-20">
                             <div class="mt-auto">
-                            <h3 class="text-[24px] font-bold mb-2 font-[Michroma] mb-12">ZIMonitor</h3>
-                            <p class="text-[20px] mb-2 font-[Assistant] mt-4">
-                                A real-time monitoring system that provides customers with 24/7 alerts on route deviations, temperature and humidity deviation on their valuable cargo.
-                            <div class="flex m-5 " href="#"><a href="#" class="text-white text-[17px] inline-block font-[Assistant] mr-2 hover:underline">Read More </a><img src="https://www.zim.com/static/images/arrow-right-solid-white.svg" class="mt-[5px] w-[20px] h-[20px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+                                <h3 class="text-[20px] sm:text-[22px] md:text-[24px] font-bold mb-2 font-[Michroma] mb-12">ZIMonitor</h3>
+                                <p class="text-[16px] sm:text-[18px] md:text-[20px] mb-2 font-[Assistant] mt-4">
+                                     A real-time monitoring system that provides customers with 24/7 alerts on route deviations, temperature and humidity deviation on their valuable cargo.
+                                </p>
+                                <div class="flex m-5" href="#">
+                                    <a href="#" class="text-white text-[15px] sm:text-[16px] inline-block font-[Assistant] mr-2 hover:underline">Read More</a>
+                                    <img src="https://www.zim.com/static/images/arrow-right-solid-white.svg" class="mt-[5px] w-[18px] sm:w-[20px] h-[18px] sm:h-[20px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2">
+                                </div>
                             </div>
                         </div>
-                    </li>
-                
-
+                    </li>    
                 <!-- Arrow buttons -->
-                <i id="left" class="hidden md:flex fas fa-angle-left absolute top-1/2 left-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-left-solid.svg"></i>
-                <i id="right" class="hidden md:flex fas fa-angle-right absolute top-1/2 right-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-right-solid.svg"></i>
+                <i id="left" class="hidden md:flex fas fa-angle-left absolute top-1/2 left-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-21 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-left-solid.svg"></i>
+                <i id="right" class="hidden md:flex fas fa-angle-right absolute top-1/2 right-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-21 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-right-solid.svg"></i>
             </div>
         </section>
-        <section class="bg-white py-12"><!--Digital card-->
-        <div class="flex relative m-8" >
-                <div class="flex w-[80%] h-[70px] font-[Michroma] text-blue-900 text-[50px] ml-4">Digital Solutions</div>
-                <div class="flex m-2"><a href="#" class="text-blue-900 text-[22px] inline-block font-[Assistant] mr-2 ">All Digital Solutions </a><img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg?v=-7--KikKqszQjvI1TUX-as9z4UA" class="w-[20px] h-[px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2"></div>
+
+    <section class="bg-white mb-4">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center px-4 py-4">
+            <div class="font-[Michroma] text-blue-900 text-[24px] sm:text-[40px] md:text-[50px] leading-tight">
+            Digital Solutions
+            </div>
+            <div class="flex mt-2 sm:mt-0 items-center">
+            <a href="#" class="text-blue-900 text-[16px] sm:text-[20px] md:text-[22px] font-[Assistant] mr-2 hover:underline">
+                All Digital Solutions
+            </a>
+            <img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg?v=-7--KikKqszQjvI1TUX-as9z4UA"
+                class="w-[16px] h-[16px] sm:w-[20px] sm:h-[20px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2" />
+            </div>
         </div>
+
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
             <!-- Card 1 -->
-            <div class="min-h-[250px] rounded-xl shadow-[0_3px_6px_rgba(0,0,0,0.23)] overflow-hidden transition duration-500 group" style="background-color: #00a3e0;">
-                <div class="p-6 ">
-                <h3 class="text-[28px] font-bold font-[Michroma] text-black transition duration-500 group-hover:text-white">myZIM Personal Area</h3>
-                <p class=" text-[16px] mt-2 font-[Assistant] text-black transition duration-500 group-hover:text-white">Get first-hand access to all your documents and shipping data in one place.</p>
-                <a href="#" class="inline-flex items-center mt-4 text-black font-[Assistant] text-[18px] hover:underline transition hover:text-white">Go Multi
-                    <a href="#" class="w-5 h-5 ml-2 text-black font-bold group-hover:text-white translate-x-1 transition-transform duration-300">→</a>
+            <div class="digital min-h-[230px] rounded-xl shadow-[0_3px_6px_rgba(0,0,0,0.23)] overflow-hidden bg-[#00a3e0] opacity-90">
+                <div class="p-4 sm:p-6 text-black hover:text-white">
+                <h3 class="text-[20px] sm:text-[28px] font-bold font-[Michroma]">myZIM Personal Area</h3>
+                <p class="text-[14px] sm:text-[16px] mt-2 font-[Assistant]">Get first-hand access to all your documents and shipping data in one place.</p>
+                <a href="#" class="inline-flex items-center mt-4 font-[Assistant] text-[16px] sm:text-[18px] hover:underline">
+                    Go Multi <span class="ml-2 font-bold">→</span>
                 </a>
                 </div>
             </div>
 
             <!-- Card 2 -->
-            <div class="min-h-[250px] rounded-xl shadow-[0_3px_6px_rgba(0,0,0,0.23)] overflow-hidden transition duration-500 group" style="background-color: #f8991d;">
-                <div class="p-6  ">
-                <h3 class="text-[28px] font-bold font-[Michroma] text-black transition duration-500 group-hover:text-white">eB/L Service</h3>
-                <p class="text-black text-[16px] mt-2 font-[Assistant] group-hover:text-white">Powered by Wave, this paperless platform digitizes all trade-related documents, with full control of your privacy.</p>
-                <a href="#" class="inline-flex items-center mt-4 text-black font-[Assistant] text-[18px] hover:underline transition hover:text-white">Go Multi
-                    <a href="#" class="w-5 h-5 ml-2 text-black font-bold group-hover:text-white translate-x-1 transition-transform duration-300">→</a>
+            <div class="min-h-[230px] rounded-xl shadow-[0_3px_6px_rgba(0,0,0,0.23)] overflow-hidden bg-[#f8991d]">
+                <div class="p-4 sm:p-6 text-black hover:text-white">
+                <h3 class="text-[20px] sm:text-[28px] font-bold font-[Michroma]">eB/L Service</h3>
+                <p class="text-[14px] sm:text-[16px] mt-2 font-[Assistant]">Powered by Wave, this paperless platform digitizes all trade-related documents, with full control of your privacy.</p>
+                <a href="#" class="inline-flex items-center mt-4 font-[Assistant] text-[16px] sm:text-[18px] hover:underline">
+                    Go Multi <span class="ml-2 font-bold">→</span>
                 </a>
                 </div>
             </div>
 
             <!-- Card 3 -->
-            <div class="min-h-[250px] rounded-xl shadow-[0_3px_6px_rgba(0,0,0,0.23)] overflow-hidden transition duration-500 group" style="background-color: #913a96;">
-                <div class="p-6  ">
-                <h3 class="text-[28px] font-bold font-[Michroma] text-black transition duration-500 group-hover:text-white">ZIMonitor</h3>
-                <p class="text-black text-[16px] mt-2 font-[Assistant] group-hover:text-white">Track, monitor and even control your sensitive cargo’s environment from start to finish.</p>
-                <a href="#" class="inline-flex items-center mt-4 text-black font-[Assistant] text-[18px] hover:underline transition hover:text-white">Go Multi
-                    <a href="#" class="w-5 h-5 ml-2 text-black font-bold group-hover:text-white translate-x-1 transition-transform duration-300">→</a>
+            <div class="min-h-[230px] rounded-xl shadow-[0_3px_6px_rgba(0,0,0,0.23)] overflow-hidden bg-[#913a96] cursor-pointer">
+                <div class="p-4 sm:p-6 text-black hover:text-white">
+                <h3 class="text-[20px] sm:text-[28px] font-bold font-[Michroma]">ZIMonitor</h3>
+                <p class="text-[14px] sm:text-[16px] mt-2 font-[Assistant]">Track, monitor and even control your sensitive cargo’s environment from start to finish.</p>
+                <a href="#" class="inline-flex items-center mt-4 font-[Assistant] text-[16px] sm:text-[18px] hover:underline">
+                    Go Multi <span class="ml-2 font-bold">→</span>
                 </a>
                 </div>
             </div>
 
             <!-- Card 4 -->
-            <div class="min-h-[250px] rounded-xl shadow-[0_3px_6px_rgba(0,0,0,0.23)] overflow-hidden transition duration-500 group" style="background-color: #9a1c1f;">
-                <div class="p-6 ">
-                <h3 class="text-[28px] font-bold font-[Michroma] text-black transition duration-500 group-hover:text-white">eZIM</h3>
-                <p class="text-black text-[16px] mt-2 font-[Assistant] group-hover:text-white">A smart and intuitive way to submit and manage your bookings 24/7.</p>
-                <a href="#" class="inline-flex items-center mt-4 text-black font-[Assistant] text-[18px] hover:underline transition hover:text-white">Go Multi
-                    <a href="#" class="w-5 h-5 ml-2 text-black font-bold group-hover:text-white translate-x-1 transition-transform duration-300">→</a>
+            <div class="min-h-[230px] rounded-xl shadow-[0_3px_6px_rgba(0,0,0,0.23)] overflow-hidden bg-[#9a1c1f] cursor-pointer">
+                <div class="p-4 sm:p-6 text-black hover:text-white">
+                <h3 class="text-[20px] sm:text-[28px] font-bold font-[Michroma]">eZIM</h3>
+                <p class="text-[14px] sm:text-[16px] mt-2 font-[Assistant]">A smart and intuitive way to submit and manage your bookings 24/7.</p>
+                <a href="#" class="inline-flex items-center mt-4 font-[Assistant] text-[16px] sm:text-[18px] hover:underline">
+                    Go Multi <span class="ml-2 font-bold">→</span>
                 </a>
-            </div>
+                </div>
             </div>
 
             <!-- Card 5 -->
-             <div class="min-h-[250px] text-white rounded-xl shadow-[0_3px_6px_rgba(0,0,0,0.23)] overflow-hidden transition duration-500 hover:text-yellow" style="background-color: #142c79;">
-                <h3 class=" text-center mt-[50px] text-[24px] font-bold font-[Assistant]  ">As a ZIM customer, your experience will always be Personal, Digital and Exceptional.</h3>
+            <div class="min-h-[230px] rounded-xl shadow-[0_3px_6px_rgba(0,0,0,0.23)] overflow-hidden text-white bg-[#142c79] hover:text-[#a86308] cursor-pointer p-4">
+                <h3 class="text-[18px] sm:text-[22px] font-[Michroma]">As a ZIM customer, your experience will always be Personal, Digital and Exceptional.</h3>
+                <button class="mt-4 text-[#002d72] bg-white rounded-[10px] px-4 py-3 w-full sm:w-full lg:w-[250px] lg:h-[60px] text-[16px] sm:text-[20px] font-[Assistant]">
+                All digital solutions
+                </button>
             </div>
-            
+
             </div>
         </div>
     </section>
+
         <footer class="bg-[#002f5f] text-white text-sm font-[Assistant]">
             <div class="max-w-7xl mx-auto px-6 md:px-10 py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
                 
