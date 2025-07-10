@@ -9,6 +9,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Comfortaa:wght@300..700&family=Michroma&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
     </head>
     <body class="m-0">
         <header class="relative"><!--Title-home-->
@@ -70,10 +72,10 @@
                                                 <span>Media</span>
                                                 <img id="myimg6" class="w-[25px] h-[25px] transition-transform duration-500 ease-in-out ml-2" id="myimg" src="asset\downarrow_white.svg" alt="Tap to Rotate">
                                                 </button>
-                                                <div id="media-dropdown" class="absolute right-0 mt-2 hidden bg-white text-[#002d72] rounded shadow-md z-1">
-                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Press Releases</a>
-                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Gallery</a>
-                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Events</a>
+                                                <div id="media-dropdown" class="w-[200px] absolute right-0 mt-2 hidden bg-white text-[#002d72] rounded shadow-md z-1">
+                                                    <a href="#" class="block px-2 py-2 border-b-1 border-blue-900 hover:bg-gray-100">ZIM News</a>
+                                                    <a href="#" class="block px-2 py-2 border-b-1 border-blue-900 hover:bg-gray-100">Media Relations</a>
+                                                    <a href="#" class="block px-2 py-2 hover:bg-gray-100">Pre IOP Report</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -89,13 +91,17 @@
                                                 </div>
                                                 <ul class="flex relative justify-around list-none mb-0 p-0 flex-1 items-center pt-[20px] gap-[7px]">
                                                     <li class="flex items-center cursor-pointer hover:border-b-[5px] border-whites">
+                                                        <button id="cargo-button" class="flex">
                                                         <span class="text-white no-underline text-[18px] font-light">Cargo Services</span>
                                                         <img class="w-[26px] h-[26px] transition-transform duration-500 ease-in-out ml-[2px]" id="myimg2" src="asset/downarrow_white.svg" alt="">
+                                                        </button>
                                                     </li>
                                                     <li><span class="text-white no-underline text-[18px] font-light hover:border-b-[5px] border-white">Global Network</span></li>
                                                     <li class="flex items-center cursor-pointer hover:border-b-[5px] border-white">
+                                                        <button id="schedules_button" class="flex">
                                                         <span class="text-white no-underline text-[18px] font-light">Schedules</span>
                                                         <img class="w-[26px] h-[26px] transition-transform duration-500 ease-in-out ml-[2px]" id="myimg3" src="asset/downarrow_white.svg" alt="">
+                                                        </button>
                                                     </li>
                                                     <li class="flex items-center cursor-pointer hover:border-b-[5px] border-white">
                                                         <span class="text-white no-underline text-[18px] font-light">Digital Solutions</span>
@@ -128,9 +134,27 @@
                                         </div>
                                     </div>
                                 </div>
-                                    <!---->    
+                                    <!---->   
                                 </div>
                             </div>
+                        </div> 
+                    </div>
+                    <div class="hidden md:block"><!--cargo dropdown-->
+                        <div id="cargo-dropdown" class="w-full absolute right-0 mt-[180px] hidden bg-white text-[#002d72] rounded shadow-md z-20 ">
+                            <a href="#" class="block px-2 py-2 font-bold  hover:bg-gray-100">> Dry Cargo</a>
+                            <a href="#" class="block px-2 py-2 font-bold hover:bg-gray-100">> Reefer Cargo</a>
+                            <a href="#" class="block px-2 py-2 font-bold hover:bg-gray-100">> Special Cargo</a>
+                            <a href="#" class="block px-2 py-2 font-bold hover:bg-gray-100">> Inland transport</a>
+                            <a href="#" class="block px-2 py-2 font-bold hover:bg-gray-100">> ZIMonitor</a>
+                        </div> 
+                    </div>
+                    <div id="schedules_dropdown" class="hidden md:block"><!--Schedules dropdown-->
+                        <div class="w-full absolute right-0 mt-[180px] hidden bg-white text-[#002d72] rounded shadow-md z-30">
+                            <a href="#" class="block px-2 py-2 font-bold  hover:bg-gray-100">> Dry Cargo</a>
+                            <a href="#" class="block px-2 py-2 font-bold hover:bg-gray-100">> Reefer Cargo</a>
+                            <a href="#" class="block px-2 py-2 font-bold hover:bg-gray-100">> Special Cargo</a>
+                            <a href="#" class="block px-2 py-2 font-bold hover:bg-gray-100">> Inland transport</a>
+                            <a href="#" class="block px-2 py-2 font-bold hover:bg-gray-100">> ZIMonitor</a>
                         </div> 
                     </div>
                     <section class="title  sm:relative relative text-white  bg-center h-[740px] bg-[url('https://www.zim.com/assets/24fh2xzd/zim-sammy-ofer_panama_wlu_mobile.webp')] md:bg-[url('https://www.zim.com/assets/dakfozjo/zim-sammy-ofer_panama_wlu_desktop.webp')] bg-cover bg-center bg-no-repeat" >
@@ -232,9 +256,10 @@
                 </div>
             </div>
         </header>
+
         <section class="mt-[80px] mb-[10px]"><!--detail cards-->
             <div class="relative w-full overflow-hidden px-2 sm:px-4">
-                <ul class="carousel grid grid-flow-col auto-cols-[65%] sm:auto-cols-[calc(100%/2-12px)] md:auto-cols-[calc(100%/3-12px)] gap-3 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide">
+                <ul class="carousel grid grid-flow-col auto-cols-[80%] sm:auto-cols-[calc(100%/2-12px)] md:auto-cols-[calc(100%/3-12px)] gap-3 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide">
                 
                 <!-- Card1-->
                 <li class="card flex flex-col w-[270px] sm:w-[390px] bg-gray-100 shadow-[0_3px_6px_rgba(0,0,0,0.23)] rounded-[15px] relative overflow-hidden cursor-pointer snap-start">
@@ -316,10 +341,10 @@
                 </li>
                 </ul>
                 <!-- Arrow buttons (shown only on md and above) -->
-                <i id="left" class="hidden md:flex fas fa-angle-left absolute top-1/2 left-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2">
+                <i id="left" class="hidden md:flex arrow-left absolute top-1/2 left-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2">
                 <img src="https://www.zim.com/static/images/chevron-left-solid.svg">
                 </i>
-                <i id="right" class="hidden md:flex fas fa-angle-right absolute top-1/2 right-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2">
+                <i id="right" class="hidden md:flex arrow-right absolute top-1/2 right-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-10 border-blue-900 border-2">
                 <img src="https://www.zim.com/static/images/chevron-right-solid.svg">
                 </i>
             </div>
@@ -392,7 +417,6 @@
                             </div>
                         </div>
                     </li>
-                
                     <!-- Card 4 -->
                     <li class="card1 relative w-[200px] sm:w-[230px] md:w-[270px] h-[400px] sm:h-[450px] md:h-[500px] rounded-[10px] overflow-hidden cursor-pointer shadow-[0_3px_6px_rgba(0,0,0,0.23)] group">
                         <img src="https://www.zim.com/assets/psipqe4k/new-zealand-bac1895_inland_transport.webp" alt="Inland Transport" class="w-full h-full object-cover" />
@@ -412,8 +436,6 @@
                             </div>
                         </div>
                     </li>
-                    
-
                     <!-- Card 5 -->
                      <li class="card1 relative w-[200px] sm:w-[230px] md:w-[270px] h-[400px] sm:h-[450px] md:h-[500px] rounded-[10px] overflow-hidden cursor-pointer shadow-[0_3px_6px_rgba(0,0,0,0.23)] group">
                         <img src="https://www.zim.com/assets/u2nluxat/zimonitor-stacking-600x600.webp" alt="ZIMonitor" class="w-full h-full object-cover" />
@@ -434,137 +456,376 @@
                         </div>
                     </li>    
                 <!-- Arrow buttons -->
-                <i id="left" class="hidden md:flex fas fa-angle-left absolute top-1/2 left-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-21 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-left-solid.svg"></i>
-                <i id="right" class="hidden md:flex fas fa-angle-right absolute top-1/2 right-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-21 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-right-solid.svg"></i>
+                <i id="left" class="hidden md:flex  arrow_left absolute top-1/2 left-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-21 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-left-solid.svg"></i>
+                <i id="right" class="hidden md:flex arrow_right absolute top-1/2 right-2 transform -translate-y-1/2 bg-white text-lg w-14 h-14 flex items-center justify-center rounded-full shadow-md cursor-pointer z-21 border-blue-900 border-2"><img src="https://www.zim.com/static/images/chevron-right-solid.svg"></i>
             </div>
         </section>
 
-    <section class="bg-white mb-4">
-        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center px-4 py-4">
-            <div class="font-[Michroma] text-blue-900 text-[24px] sm:text-[40px] md:text-[50px] leading-tight">
-            Digital Solutions
-            </div>
-            <div class="flex mt-2 sm:mt-0 items-center">
-            <a href="#" class="text-blue-900 text-[16px] sm:text-[20px] md:text-[22px] font-[Assistant] mr-2 hover:underline">
-                All Digital Solutions
-            </a>
-            <img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg?v=-7--KikKqszQjvI1TUX-as9z4UA"
-                class="w-[16px] h-[16px] sm:w-[20px] sm:h-[20px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2" />
-            </div>
-        </div>
-
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-            <!-- Card 1 -->
-            <div class="digital min-h-[230px] rounded-xl shadow-[0_3px_6px_rgba(0,0,0,0.23)] overflow-hidden bg-[#00a3e0] opacity-90">
-                <div class="p-4 sm:p-6 text-black hover:text-white">
-                <h3 class="text-[20px] sm:text-[28px] font-bold font-[Michroma]">myZIM Personal Area</h3>
-                <p class="text-[14px] sm:text-[16px] mt-2 font-[Assistant]">Get first-hand access to all your documents and shipping data in one place.</p>
-                <a href="#" class="inline-flex items-center mt-4 font-[Assistant] text-[16px] sm:text-[18px] hover:underline">
-                    Go Multi <span class="ml-2 font-bold">→</span>
+        <section class="bg-white mb-4"><!--Digital solutions-->
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center px-4 py-4">
+                <div class="font-[Michroma] text-blue-900 text-[24px] sm:text-[40px] md:text-[50px] leading-tight">
+                Digital Solutions
+                </div>
+                <div class="flex mt-2 sm:mt-0 items-center">
+                <a href="#" class="text-blue-900 text-[16px] sm:text-[20px] md:text-[22px] font-[Assistant] mr-2 hover:underline">
+                    All Digital Solutions
                 </a>
+                <img src="https://www.zim.com/wwwroot/static/images/arrow-right-long-solid-primary.svg?v=-7--KikKqszQjvI1TUX-as9z4UA"
+                    class="w-[16px] h-[16px] sm:w-[20px] sm:h-[20px] transform transition-transform duration-[1000ms] ease-in-out hover:translate-x-2" />
                 </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="min-h-[230px] rounded-xl shadow-[0_3px_6px_rgba(0,0,0,0.23)] overflow-hidden bg-[#f8991d]">
-                <div class="p-4 sm:p-6 text-black hover:text-white">
-                <h3 class="text-[20px] sm:text-[28px] font-bold font-[Michroma]">eB/L Service</h3>
-                <p class="text-[14px] sm:text-[16px] mt-2 font-[Assistant]">Powered by Wave, this paperless platform digitizes all trade-related documents, with full control of your privacy.</p>
-                <a href="#" class="inline-flex items-center mt-4 font-[Assistant] text-[16px] sm:text-[18px] hover:underline">
-                    Go Multi <span class="ml-2 font-bold">→</span>
-                </a>
+            <div class="max-w-7xl mx-auto px-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Card 1 -->
+                    <div class="digital min-h-[230px] rounded-xl shadow-[0_3px_6px_rgba(0,0,0,0.23)] overflow-hidden bg-[#00a3e0] opacity-90">
+                        <div class="p-4 sm:p-6 text-black hover:text-white">
+                        <h3 class="text-[20px] sm:text-[28px] font-bold font-[Michroma]">myZIM Personal Area</h3>
+                        <p class="text-[14px] sm:text-[16px] mt-2 font-[Assistant]">Get first-hand access to all your documents and shipping data in one place.</p>
+                        <a href="#" class="inline-flex items-center mt-4 font-[Assistant] text-[16px] sm:text-[18px] hover:underline">
+                            Go Multi <span class="ml-2 font-bold">→</span>
+                        </a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="min-h-[230px] rounded-xl shadow-[0_3px_6px_rgba(0,0,0,0.23)] overflow-hidden bg-[#f8991d]">
+                        <div class="p-4 sm:p-6 text-black hover:text-white">
+                        <h3 class="text-[20px] sm:text-[28px] font-bold font-[Michroma]">eB/L Service</h3>
+                        <p class="text-[14px] sm:text-[16px] mt-2 font-[Assistant]">Powered by Wave, this paperless platform digitizes all trade-related documents, with full control of your privacy.</p>
+                        <a href="#" class="inline-flex items-center mt-4 font-[Assistant] text-[16px] sm:text-[18px] hover:underline">
+                            Go Multi <span class="ml-2 font-bold">→</span>
+                        </a>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="min-h-[230px] rounded-xl shadow-[0_3px_6px_rgba(0,0,0,0.23)] overflow-hidden bg-[#913a96] cursor-pointer">
+                        <div class="p-4 sm:p-6 text-black hover:text-white">
+                        <h3 class="text-[20px] sm:text-[28px] font-bold font-[Michroma]">ZIMonitor</h3>
+                        <p class="text-[14px] sm:text-[16px] mt-2 font-[Assistant]">Track, monitor and even control your sensitive cargo’s environment from start to finish.</p>
+                        <a href="#" class="inline-flex items-center mt-4 font-[Assistant] text-[16px] sm:text-[18px] hover:underline">
+                            Go Multi <span class="ml-2 font-bold">→</span>
+                        </a>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="min-h-[230px] rounded-xl shadow-[0_3px_6px_rgba(0,0,0,0.23)] overflow-hidden bg-[#9a1c1f] cursor-pointer">
+                        <div class="p-4 sm:p-6 text-black hover:text-white">
+                        <h3 class="text-[20px] sm:text-[28px] font-bold font-[Michroma]">eZIM</h3>
+                        <p class="text-[14px] sm:text-[16px] mt-2 font-[Assistant]">A smart and intuitive way to submit and manage your bookings 24/7.</p>
+                        <a href="#" class="inline-flex items-center mt-4 font-[Assistant] text-[16px] sm:text-[18px] hover:underline">
+                            Go Multi <span class="ml-2 font-bold">→</span>
+                        </a>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="min-h-[230px] rounded-xl shadow-[0_3px_6px_rgba(0,0,0,0.23)] overflow-hidden text-white bg-[#142c79] hover:text-[#a86308] cursor-pointer p-4">
+                        <h3 class="text-[18px] sm:text-[22px] font-[Michroma]">As a ZIM customer, your experience will always be Personal, Digital and Exceptional.</h3>
+                        <button class="mt-4 text-[#002d72] bg-white rounded-[10px] px-4 py-3 w-full sm:w-full lg:w-[250px] lg:h-[60px] text-[16px] sm:text-[20px] font-[Assistant]">
+                        All digital solutions
+                        </button>
+                    </div>
                 </div>
             </div>
+        </section>
+        
+        <section class="bg-cover bg-center py-20 px-4 sm:px-8 overflow-hidden">
+            <div class="bg-transparent max-w-7xl max-h-5xl mx-auto rounded-xl shadow-lg px-10 pb-20 pt-10 text-left bg-cover " style="background-image: url('https://www.zim.com/assets/ygdft32m/map-and-shadow.webp');">
+                <h2 class="w-full text-4xl sm:text-5xl font-light text-[#002c5f] mb-20 mt-0 font-[Michroma]">Find out more about<br>ZIM services</h2>
 
-            <!-- Card 3 -->
-            <div class="min-h-[230px] rounded-xl shadow-[0_3px_6px_rgba(0,0,0,0.23)] overflow-hidden bg-[#913a96] cursor-pointer">
-                <div class="p-4 sm:p-6 text-black hover:text-white">
-                <h3 class="text-[20px] sm:text-[28px] font-bold font-[Michroma]">ZIMonitor</h3>
-                <p class="text-[14px] sm:text-[16px] mt-2 font-[Assistant]">Track, monitor and even control your sensitive cargo’s environment from start to finish.</p>
-                <a href="#" class="inline-flex items-center mt-4 font-[Assistant] text-[16px] sm:text-[18px] hover:underline">
-                    Go Multi <span class="ml-2 font-bold">→</span>
-                </a>
+                <div class="flex flex-col sm:flex-row justify-between gap-6 w-full font-[Assistant]">
+                    <a href="#" class="flex-1 text-center bg-[#001f5f] text-white text-lg font-medium py-4 px-8 rounded-lg hover:bg-blue-500 transition">Trades &amp; Lines</a>
+                    <a href="#" class="flex-1 text-center bg-[#001f5f] text-white text-lg font-medium py-4 px-8 rounded-lg hover:bg-blue-500 transition">Port Calls</a>
+                    <a href="#" class="flex-1 text-center bg-[#001f5f] text-white text-lg font-medium py-4 px-8 rounded-lg hover:bg-blue-500 transition">Offices</a>
                 </div>
             </div>
-
-            <!-- Card 4 -->
-            <div class="min-h-[230px] rounded-xl shadow-[0_3px_6px_rgba(0,0,0,0.23)] overflow-hidden bg-[#9a1c1f] cursor-pointer">
-                <div class="p-4 sm:p-6 text-black hover:text-white">
-                <h3 class="text-[20px] sm:text-[28px] font-bold font-[Michroma]">eZIM</h3>
-                <p class="text-[14px] sm:text-[16px] mt-2 font-[Assistant]">A smart and intuitive way to submit and manage your bookings 24/7.</p>
-                <a href="#" class="inline-flex items-center mt-4 font-[Assistant] text-[16px] sm:text-[18px] hover:underline">
-                    Go Multi <span class="ml-2 font-bold">→</span>
-                </a>
+        </section>
+       <section class=" px-4 sm:px-8 py-12">
+            <div class="relative max-w-7xl  h-[400px] bg-cover bg-no-repeat bg-right rounded-xl overflow-hidden shadow-lg"
+                style="background-image: url('https://www.zim.com/assets/inlldwd4/2023-03-24-036-wlu-raq-en-1920x500.webp?v=1da7540774de000'); width:6xl; height:full;">
+                <div class="absolute inset-0 bg-gradient-to-r from-[#001f5f]/90 to-transparent"></div>
+                <div class="relative z-10 h-full flex items-center px-6 sm:px-10">
+                    <div class="text-white max-w-full">
+                        <h2 class="text-4xl sm:text-5xl font-light font-[Michroma] mb-6 leading-tight">
+                        Interested in a<br>price offer?
+                        </h2>
+                        <a href="#" class="inline-block bg-white text-[#001f5f] font-light font-[Assistant] px-6 py-3 rounded-md text-base sm:text-lg hover:bg-gray-100 transition">
+                        Request a Quote
+                        </a>
+                    </div>
                 </div>
             </div>
-
-            <!-- Card 5 -->
-            <div class="min-h-[230px] rounded-xl shadow-[0_3px_6px_rgba(0,0,0,0.23)] overflow-hidden text-white bg-[#142c79] hover:text-[#a86308] cursor-pointer p-4">
-                <h3 class="text-[18px] sm:text-[22px] font-[Michroma]">As a ZIM customer, your experience will always be Personal, Digital and Exceptional.</h3>
-                <button class="mt-4 text-[#002d72] bg-white rounded-[10px] px-4 py-3 w-full sm:w-full lg:w-[250px] lg:h-[60px] text-[16px] sm:text-[20px] font-[Assistant]">
-                All digital solutions
-                </button>
-            </div>
-
-            </div>
-        </div>
-    </section>
-
-        <footer class="bg-[#002f5f] text-white text-sm font-[Assistant]">
-            <div class="max-w-7xl mx-auto px-6 md:px-10 py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
+        </section>
+        <section class="w-full px-4 sm:px-8 py-12">
+            <div class="max-w-7xl mx-auto bg-white rounded-xl overflow-hidden shadow-lg grid grid-cols-1 md:grid-cols-2">
                 
-                <!-- Logo Column -->
-                <div>
-                <img src="https://www.zim.com/assets/f4ln4see/logo80-tablets-light-200x112.png" alt="ZIM Logo" class="h-12 mb-4">
-                <p class="text-[#cdd1d4] leading-relaxed text-[14px]">
-                    ZIM Integrated Shipping Services Ltd. is a global container shipping company with over 75 years of experience.
+                <!-- Left Blue Panel -->
+                <div class="bg-[#0e8ec9] text-white p-10 flex flex-col justify-center">
+                <h2 class="text-4xl sm:text-6xl font-light mb-8 font-[Michroma]">Togetherness</h2>
+                <p class="text-2xl font-medium mb-8 font-[Assistant]">
+                    At ZIM, we believe that alongside exceptional digital services, a personal touch is essential.
                 </p>
+
+                <!-- Buttons -->
+                <div class="flex-col w-full sm:w-[50%] space-x-4 sm:space-x-0 sm:space-y-4 sm:flex">
+                    <a href="#" class="bg-white text-[#0e8ec9] px-6 py-3 rounded-md font-semibold text-base hover:bg-gray-100 transition inline-block text-center">
+                    Local Office(s)
+                    </a>
+                    <a href="#" class="border border-white text-white px-6 py-3 rounded-md font-semibold text-base hover:bg-white hover:text-[#0e8ec9] transition inline-block text-center">
+                    Global Offices
+                    </a>
+                </div>
                 </div>
 
-                <!-- Column 1: About -->
+                <!-- Right Image Panel -->
+                <div class="h-full w-full">
+                <img src="https://www.zim.com/assets/tiok515a/col07286.webp" alt="Office Image" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+        <section class="w-full bg-white py-12 px-4 sm:px-8"><!--Counter-->
+            <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
+
+                <!-- Item 1 -->
+                <div class="flex items-center space-x-6">
+                <img src="https://www.zim.com/assets/ihlhrowo/92453-14_ports-webp.webp" alt="Ports Icon" class="w-35 h-35">
+                <div class="w-[50%]">
+                    <div class="flex-row items-center space-x-2">
+                    <span class="text-7xl font-light text-[#001f5f] font[Comfortaa]">0</span>
+                    <hr class="flex-grow border-t-2 border-[#001f5f]">
+                    </div>
+                    <p class="text-[#001f5f] text-xl mt-2">Ports of call</p>
+                </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="flex items-center space-x-6">
+                <img src="https://www.zim.com/assets/dkdpdcoa/92453-14_offices-webp.webp" alt="Offices Icon" class="w-35 h-35">
+                <div class="w-[50%]">
+                    <div class="flex-row items-center space-x-2">
+                    <span class="text-7xl font-light text-[#001f5f] font[Comfortaa]">0</span>
+                    <hr class="flex-grow border-t-2 border-[#001f5f]">
+                    </div>
+                    <p class="text-[#001f5f] text-xl mt-2">Offices</p>
+                </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="flex items-center space-x-6">
+                <img src="https://www.zim.com/assets/kjlf2ium/92453-14_vessels-webp.webp" alt="Vessels Icon" class="w-35 h-35">
+                <div class="w-[50%]">
+                    <div class="flex-row items-center space-x-2">
+                    <span class="text-7xl font-light text-[#001f5f] font[Comfortaa]">0</span>
+                    <hr class="flex-grow border-t-2 border-[#001f5f]">
+                    </div>
+                    <p class="text-[#001f5f] text-xl mt-2">Vessels</p>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-full bg-white px-4 sm:px-8 py-10"><!--news-->
+            <ul class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Card 1 -->
+                <li class="bg-white rounded-2xl shadow-md hover:shadow-none hover:border hover:border-gray-700 transition-all duration-300 overflow-hidden">
+                <div class="h-64 overflow-hidden relative">
+                    <img
+                    src="https://www.zim.com/assets/wkxbyccc/surcharges-003-wlu-416x234.webp"
+                    alt="Image 1"
+                    class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"/>
+                </div>
+                <div class="p-4 space-y-2">
+                    <div class="flex flex-wrap gap-2 text-sm">
+                    <span class="bg-[#d8e3f2] text-[#002d72] px-3 py-1 rounded-full">Rates and Surcharges</span>
+                    <span class="bg-[#d8e3f2] text-[#002d72] px-3 py-1 rounded-full">All Countries</span>
+                    </div>
+                    <h3 class="text-[#001f5f] font-bold text-lg font-[Michroma]">New Emission Fee (NEF) charge update – August 1st, 2025</h3>
+                    <p class="text-sm text-gray-500">06-Jul-2025</p>
+                </div>
+                </li>
+
+                <!-- Card 2 -->
+                <li class="bg-white rounded-2xl shadow-md hover:shadow-none hover:border hover:border-gray-300 transition-all duration-300 overflow-hidden">
+                <div class="h-64 overflow-hidden relative">
+                    <img
+                    src="https://www.zim.com/assets/jskfvbr3/customer-advisory-dji_0099-416x234.webp"
+                    alt="Image 2"
+                    class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"/>
+                </div>
+                <div class="p-4 space-y-2">
+                    <div class="flex flex-wrap gap-2 text-sm">
+                    <span class="bg-[#d8e3f2] text-[#002d72] px-3 py-1 rounded-full">Customer Advisory</span>
+                    <span class="bg-[#d8e3f2] text-[#002d72] px-3 py-1 rounded-full">All Countries</span>
+                    </div>
+                    <h3 class="text-[#001f5f] font-bold text-lg font-[Michroma]">Israel war situation update</h3>
+                    <p class="text-sm text-gray-500">15-Jun-2025</p>
+                </div>
+                </li>
+
+                <!-- Card 3 -->
+                <li class="bg-white rounded-2xl shadow-md hover:shadow-none hover:border hover:border-gray-300 transition-all duration-300 overflow-hidden">
+                <div class="h-64 overflow-hidden relative">
+                    <img
+                    src="https://www.zim.com/assets/qd2jrunc/customer-advisory-img_1353-416x234.webp"
+                    alt="Image 3"
+                    class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"/>
+                </div>
+                <div class="p-4 space-y-2">
+                    <div class="flex flex-wrap gap-2 text-sm">
+                    <span class="bg-[#d8e3f2] text-[#002d72] px-3 py-1 rounded-full">Rates and Surcharges</span>
+                    <span class="bg-[#d8e3f2] text-[#002d72] px-3 py-1 rounded-full">All Countries</span>
+                    </div>
+                    <h3 class="text-[#001f5f] font-bold text-lg font-[Michroma]">NBF (New Bunker Factor*) update</h3>
+                    <p class="text-sm text-gray-500 text-bottom">11-Jun-2025</p>
+                </div>
+            </li>
+            </ul>
+        </section>
+        <section class="bg-white py-16 text-center">
+            <div class="max-w-5xl mx-auto px-4">
+                <!-- Heading -->
+                <h2 class="text-[#001f5f] text-2xl sm:text-3xl font-bold mb-2 font-[Michroma]">Let's keep in touch!</h2><br>
+                <p class="text-[#001f5f] text-lg sm:text-xl mb-10 font-[Michroma]">Follow us on social media</p>
+
+                <!-- Social Icons using SVGs or image logos -->
+                <div class="flex justify-center items-center flex-wrap gap-20 mt-12">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/company/zim" target="_blank">
+                    <img src="asset\linkedin-svgrepo-com.svg" alt="LinkedIn" class="h-10 hover:scale-110 transition-transform duration-300" />
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/zimshippingservices" target="_blank">
+                    <img src="asset\facebook-svgrepo-com.svg" alt="Facebook" class="h-10 hover:scale-110 transition-transform duration-300" />
+                </a>
+
+                <!-- YouTube -->
+                <a href="https://www.youtube.com/ZIMShipping" target="_blank">
+                    <img src="asset\youtube-svgrepo-com.svg" alt="YouTube" class="h-10 hover:scale-110 transition-transform duration-300" />
+                </a>
+
+                <!-- Vimeo -->
+                <a href="https://vimeo.com/zimshipping" target="_blank">
+                    <img src="asset\vimeo-icon-svgrepo-com.svg" alt="Vimeo" class="h-10 hover:scale-110 transition-transform duration-300" />
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/zimshipping/" target="_blank">
+                    <img src="asset\instagram-svgrepo-com.svg" alt="Instagram" class="h-10 hover:scale-110 transition-transform duration-300" />
+                </a>
+
+                <!-- X com-->
+                <a href="https://x.com/zimshipping/" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/x.svg" alt="X" class="h-10 hover:scale-110 transition-transform duration-300" />
+                </a>
+
+                <!-- Line -->
+                <a href="https://www.glassdoor.com/Overview/Working-at-ZIM-Integrated-Shipping-Services-EI_IE194592.11,43.htm" target="_blank">
+                    <img src="https://www.zim.com/assets/sonbawyh/glassdoor-off-green.svg" alt="Line" class="h-10 hover:scale-110 transition-transform duration-300" />
+                </a>
+
+                <!-- WeChat -->
+                <a href="https://www.zim.com/landing-pages/zim-wechat-qr" target="_blank">
+                    <img src="https://www.zim.com/assets/myob1c4k/component-176.png" alt="WeChat" class="h-10 hover:scale-110 transition-transform duration-300" />
+                </a>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-[#003c8a] text-white pt-12 px-6 sm:px-12">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 mb-6">
+                <!-- Logos -->
+                <div class="space-y-4">
+                <img src="https://www.zim.com/assets/5din2yi0/zim80-logo-350x145-white.png" alt="ZIM Logo" class="w-60">
+                
+                </div>
                 <div>
-                <h4 class="uppercase font-bold text-[15px] mb-4">About ZIM</h4>
-                <ul class="space-y-2 text-[#cdd1d4]">
-                    <li><a href="#" class="hover:underline">Company Profile</a></li>
-                    <li><a href="#" class="hover:underline">Careers</a></li>
-                    <li><a href="#" class="hover:underline">Leadership</a></li>
-                    <li><a href="#" class="hover:underline">ESG</a></li>
+                <h2 class="text-xl font-bold mb-2">NEWS</h2>
+                <ul class="space-y-1 text-m">
+                    <li>Customer Advisory</li>
+                    <li>News</li>
+                    <li>Shipping News (Regulations)</li>
                 </ul>
                 </div>
-
-                <!-- Column 2: Tools -->
                 <div>
-                <h4 class="uppercase font-bold text-[15px] mb-4">Tools</h4>
-                <ul class="space-y-2 text-[#cdd1d4]">
-                    <li><a href="#" class="hover:underline">Track a Shipment</a></li>
-                    <li><a href="#" class="hover:underline">Schedules</a></li>
-                    <li><a href="#" class="hover:underline">Offices</a></li>
-                    <li><a href="#" class="hover:underline">eZIM Login</a></li>
+                <h2 class="text-xl font-bold mb-2">ABOUT ZIM</h2>
+                <ul class="flex-row gap-8 space-y-1 text-m">
+                    <li>Global Network</li>
+                    <li>Cargo Services</li>
+                    <li>Digital Solutions</li>
+                    <li>Whistleblower</li>
+                    <li>Investors</li>
+                    <li>ZIM Ventures</li>
                 </ul>
                 </div>
-
-                <!-- Column 3: Contact -->
                 <div>
-                <h4 class="uppercase font-bold text-[15px] mb-4">Support</h4>
-                <ul class="space-y-2 text-[#cdd1d4]">
-                    <li><a href="#" class="hover:underline">Contact Us</a></li>
-                    <li><a href="#" class="hover:underline">FAQs</a></li>
-                    <li><a href="#" class="hover:underline">Terms of Use</a></li>
-                    <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                <h2 class="text-xl font-bold mb-2">HELP</h2>
+                <ul class="space-y-1 text-m">
+                    <li>Useful Information</li>
+                    <li>SOLAS VGM FAQ</li>
+                    <li>ZIM Shipping Containers</li>
+                    <li>Quotation Terms and Conditions</li>
+                    <li>Booking Confirmation Clauses</li>
+                    <li>B/L Terms & conditions</li>
+                    <li>Sea Waybill</li>
+                </ul>
+                </div>
+                <div>
+                <h2 class="text-xl font-bold mb-2">USEFUL TOOLS</h2>
+                <ul class="space-y-1 text-m">
+                    <li>Tariff Calculator</li>
+                    <li>SOLAS VGM</li>
+                    <li>Demurrage & Detention Tariff</li>
+                    <li>Local Charges</li>
+                    <li>Country Requirements & Regulations</li>
                 </ul>
                 </div>
             </div>
+            <div class="max-w-4xl items-left  mt-12 mb-10 px-4"><!--subscription-->
+                <h3 class="text-2xl font-semibold mb-6 font-[Michroma]">Subscribe to our mailing list to receive the latest updates and offer from ZIM</h3>
+                <div class="flex flex-wrap gap-4">
+                <input type="text" placeholder="First Name" class="flex-1 p-3 rounded-md bg-white text-black w-full sm:w-auto">
+                <input type="text" placeholder="Last Name" class="flex-1 p-3 rounded-md bg-white text-black w-full sm:w-auto">
+                </div>
+                <div class="flex flex-wrap gap-4 mt-4">
+                <input type="email" placeholder="Email" class="flex-1 p-3 bg-white rounded-md text-black w-full sm:w-auto">
+                <button class="bg-yellow-600 text-white px-6 py-3 rounded-md">&rarr;</button>
+                </div>
+                <div class="mt-4 flex items-start gap-2">
+                <input type="checkbox" class="mt-1">
+                <p class="text-sm">I agree to receive marketing communications and updates from ZIM and its affiliated companies. We will use your information as part of <a href="#" class="underline">our data protection policy</a>.</p>
+                </div>
+            </div>
+            <div class="border-t border-white/20 mt-10 pt-6 text-center text-m">
+                <p>&copy; 2018 ZIM Integrated Shipping Services Ltd.&nbsp; | Terms of Use&nbsp; | Data Protection Policy&nbsp;| ZIM Cookies and Tracking Policy&nbsp;  | Cookie Preferences</p>
 
-            <!-- Divider -->
-            <div class="border-t border-[#3d5979]"></div>
-
-            <!-- Bottom Strip -->
-            <div class="text-center text-[#cdd1d4] text-xs py-4">
-                © 2025 ZIM Integrated Shipping Services Ltd. All rights reserved.
+                <div class="flex justify-center gap-6 mt-6 text-2xl pb-10"><!--Icons -->
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-x-twitter"></i>
+                <i class="fab fa-vimeo-v"></i>
+                <i class="fab fa-weixin"></i>
+                </div>
             </div>
         </footer>
+        <!-- Footer Description-->
+        <section class="bg-white text-center text-sm text-[#003c8a] px-4 py-12">
+            <p class="max-w-3xl mx-auto leading-relaxed">
+                ZIM Integrated Shipping Services Ltd. is one of the leading carriers in the global container shipping industry. 
+                ZIM operates a modern fleet and a 
+                <a href="#" class="text-blue-600 underline hover:text-blue-800">network of shipping lines</a> offering cargo transportation 
+                services on all major global trade routes, supported by the 
+                <a href="#" class="text-blue-600 underline hover:text-blue-800">company's local offices</a> and representatives around the world.
+            </p>
+
+            <p class="mt-4">
+                &copy; ZIM Integrated Shipping Services Ltd. | All rights reserved
+            </p>
+
+            <p class="mt-1">
+                <a href="#" class="text-blue-600 underline hover:text-blue-800">沪ICP备2025110343号</a>
+            </p>
+        </section>
 
         <script src="script.js"></script>
     </body>

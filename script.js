@@ -56,6 +56,15 @@ document.getElementById('media-button').addEventListener('click', function () {
       const dropdown = document.getElementById('media-dropdown');
       dropdown.classList.toggle('hidden');
     });
+document.getElementById('cargo-button').addEventListener('click', function () {
+      const dropdown1= document.getElementById('cargo-dropdown');
+      dropdown1.classList.toggle('hidden');
+    });
+  document.getElementById('schedules_button').addEventListener('click', function () {
+      const dropdown2= document.getElementById('schedules_dropdown');
+      dropdown2.classList.toggle('hidden');
+    });
+
   // trackking form
   function showTab(tabId, clickedButton) {
       document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
@@ -111,7 +120,7 @@ setInterval(showNextNews, 3000);
 // card scroll
 document.addEventListener("DOMContentLoaded", function () {
       const carousel = document.querySelector(".carousel");
-      const arrowBtns = document.querySelectorAll(".fa-angle-left, .fa-angle-right");
+      const arrowBtns = document.querySelectorAll(".arrow-left, .arrow-right");
       const firstCard = carousel.querySelector(".card");
       const firstCardWidth = firstCard.offsetWidth;
       let isDragging = false, startX, startScrollLeft;
@@ -152,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
       const carousel1 = document.querySelector(".carousel1");
-      const arrowBtns1 = document.querySelectorAll(".fa-angle-left, .fa-angle-right");
+      const arrowBtns1 = document.querySelectorAll(".arrow_left, .arrow_right");
       const firstCard1 = carousel1.querySelector(".card1");
       const firstCardWidth1 = firstCard1.offsetWidth;
       let isDragging1 = false, startX, startScrollLeft;
